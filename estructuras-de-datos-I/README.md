@@ -25,9 +25,9 @@ El procesado de listas es una parte fundamental de la programación. Una prueba 
 
 ## Operaciones sobre listas
 
-Como veremos durante el módulo, la gran parte de las operaciones que realizamos como programadores consiste en transformar datos. Concretamente, tres tipos de transformaciones: mapeados, filtrados y acumulados. Estas transformaciones están representadas en las funciones map, filter y reduce de Javascript y acostumbrarse a utilizarlas es una de las mejores estrategias para aumentar la velocidad de desarrollo y la legibilidad de nuestro código.
+Como veremos durante el módulo, la gran parte de las operaciones que realizamos como programadores consiste en transformar datos. Concretamente, tres tipos de transformaciones: mapeados, filtrados y acumulados. Estas transformaciones están representadas en las funciones `map`, `filter` y `reduce` de Javascript y acostumbrarse a utilizarlas es una de las mejores estrategias para aumentar la velocidad de desarrollo y la legibilidad de nuestro código.
 
-Adicionalmente, estas tres funciones básicas, junto con la recursividad y las funciones de primer orden (siguiente módulo), representan los pilares fundamentales de la programación funcional. Este estilo de programación es especialmente relevante en desarrollo web y tiene una influencia muy fuerte en frameworks modernos como React, Angular y Vue.
+Adicionalmente, estas tres funciones básicas, junto con la recursividad y las funciones de primer orden (siguiente módulo), representan los pilares fundamentales de la programación funcional. Este estilo de programación es especialmente relevante en desarrollo web y tiene una influencia muy fuerte en frameworks modernos como _React_, _Angular_ y _Vue_.
 
 Otras operaciones sobre listas que veremos son:
 
@@ -49,9 +49,9 @@ Finalmente introducimos [Lodash](https://lodash.com/), una librería de utilidad
 
 ##### Recursos
 
-- [Map](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
-- [Filter](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
-- [Reduce](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
+- [map](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/map)
+- [filter](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/filter)
+- [reduce](https://developer.mozilla.org/es/docs/Web/JavaScript/Reference/Global_Objects/Array/reduce)
 - [Lodash docs](https://lodash.com/docs/4.17.15)
 - [Array iteration (vídeo)](https://www.youtube.com/watch?v=Urwzk6ILvPQ&t=1s&ab_channel=freeCodeCamp.org)
 - [Estructuras de datos en profundidad](https://eloquentjavascript.net/04_data.html)
@@ -61,7 +61,7 @@ Finalmente introducimos [Lodash](https://lodash.com/), una librería de utilidad
 
 Conforme avanzamos en el curso, nos encontramos un ejercicio (link) muy dificil de solucionar con las herramientas de iteración que utilizamos habitualmente: los bucles. El objetivo del problema es recorrer una estructura de datos en forma de árbol y en el momento en el que introducimos el concepto de la recursividad, la solución se vuelve mucho más sencilla.
 
-![imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tree_%28computer_science%29.svg/1200px-Tree_%28computer_science%29.svg.png)
+![imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tree_%28computer_science%29.svg/1200px-Tree_%28computer_science%29.svg.png | width=600)
 
 Las resolución de problemas mediante iteración siempre sigue la misma estructura y el primer paso es comprobar si el nodo actual es una rama o una hoja del árbol.
 
@@ -96,7 +96,7 @@ La función `printTree` funciona correctamente aplicandose en cualquier punto de
 
 ##### Recursos
 
-- [recursividad en profundidad](https://www.geeksforgeeks.org/recursion/)
+- [Recursividad en profundidad](https://www.geeksforgeeks.org/recursion/)
 
 ## Destructuring
 
