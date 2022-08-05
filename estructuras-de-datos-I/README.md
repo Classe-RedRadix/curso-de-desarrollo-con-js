@@ -63,6 +63,37 @@ Conforme avanzamos en el curso, nos encontramos un ejercicio (link) muy dificil 
 
 ![imagen](https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tree_%28computer_science%29.svg/1200px-Tree_%28computer_science%29.svg.png)
 
+Las resolución de problemas mediante iteración siempre sigue la misma estructura y el primer paso es comprobar si el nodo actual es una rama o una hoja del árbol.
+
+- Consideramos _hojas_ los nodos que no tienen descendientes
+- Consideramos _ramas_ los nodos que tienen descendientes
+
+El algoritmo es siempre el mismo:
+
+```
+- Es el nodo actual una hoja?
+  - devolvemos el valor
+- Es el nodo actual una rama?
+  - devolvemos el resultado de aplicar la función recursiva a cada descendiente de la rama
+```
+
+Por ejemplo, si queremos imprimir todos los elementos de un árbol de listas:
+
+```javascript
+function printTree(node) {
+  if (typeof node == "number") console.log(node);
+  if (Array.isArray(node)) {
+    for (let child of node) {
+      printTree(child);
+    }
+  }
+}
+
+printTree([1, [2, 3], [[4, 5]]]);
+```
+
+La función `printTree` funciona correctamente aplicandose en cualquier punto del árbol. Desde la raíz hasta las hojas. Esa flexibilidad nos permite recorrer la estructura de árbol aunque no sepamos previamente sus dimensiones.
+
 ##### Recursos
 
 - [recursividad en profundidad](https://www.geeksforgeeks.org/recursion/)
@@ -70,6 +101,15 @@ Conforme avanzamos en el curso, nos encontramos un ejercicio (link) muy dificil 
 ## Destructuring
 
 Las listas también nos permiten introducir el concepto de desestructuración. Esta práctica, que consiste en seleccionar partes de una lista o objeto, también es especialmente útil para acelerar el desarrollo y aumentar la legibilidad de nuestros programas.
+
+La desestructuración de listas en Javascript se implementa a traves de la siguiente sintaxis:
+
+```javascript
+const [a, b, ...c] = [10, 20, 30, 40, 50];
+console.log(a); // 10
+console.log(b); // 20
+console.log(c); // [30, 40, 50]
+```
 
 En esta sección también vamos a ver los operadores _rest_ y _spread_. Estos nos facilitan la gestión de los parámetros de las funciones y extienden lo que somos capaces de hacer con ellos, por ejemplo, permitiéndonos implementar una función que recibe un número _indeterminado_ de parámetros.
 
