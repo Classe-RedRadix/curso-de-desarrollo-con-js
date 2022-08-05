@@ -61,6 +61,8 @@ Finalmente introducimos [Lodash](https://lodash.com/), una librería de utilidad
 
 Conforme avanzamos en el curso, nos encontramos un ejercicio (link) muy dificil de solucionar con las herramientas de iteración que utilizamos habitualmente: los bucles. El objetivo del problema es recorrer una estructura de datos en forma de árbol y en el momento en el que introducimos el concepto de la recursividad, la solución se vuelve mucho más sencilla.
 
+Una estructura de árbol tiene el siguiente aspecto:
+
 <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5f/Tree_%28computer_science%29.svg/1200px-Tree_%28computer_science%29.svg.png" width="600" height="600">
 
 Las resolución de problemas mediante iteración siempre sigue la misma estructura y el primer paso es comprobar si el nodo actual es una rama o una hoja del árbol.
