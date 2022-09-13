@@ -4,7 +4,7 @@ Bienvenido al curso de JavaScript Profesional de RedRadix. El objetivo de este c
 
 Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuelvan los ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
 
-Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que el usuario puede consultar para profundizar en esos temas.
+Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que pueden ser consultados para profundizar en los temas seleccionados.
 
 #### Nota sobre los recursos
 
@@ -16,13 +16,13 @@ Incluímos los enlaces a las versiones inglesas de los materiales complementario
 
 # Tabla de contenido
 
-1. [Requisitos generales](#requisitos-generales)
-2. [Conceptos básicos](#conceptos-basicos)
-3. [Funciones](#funciones)
-4. [Manipulación de strings](#manipulacion-strings)
-5. [Intervalos](#intervalos)
-6. [Gestión de errores](#gestion-errores)
-7. [Calentamiento](#calentamiento)
+- [Requisitos generales](#requisitos-generales)
+- [Conceptos básicos](#conceptos-basicos)
+- [Funciones](#funciones)
+- [Manipulación de strings](#manipulacion-strings)
+- [Intervalos](#intervalos)
+- [Gestión de errores](#gestion-errores)
+- [Calentamiento](#calentamiento)
 
 ## Requisitos generales <a name="requisitos-generales">
 
