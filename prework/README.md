@@ -14,13 +14,18 @@ Incluímos los enlaces a las versiones inglesas de los materiales complementario
 
 - Los enlaces a Eloquent Javascript también pueden consultarse en español en esta traducción: https://eloquentjs-es.thedojo.mx
 
-#### Requisitos generales
+# Tabla de contenido
+
+1. [Requisitos generales](#requisitos-generales)
+1. [Conceptos básicos](#conceptos-basicos)
+
+#### Requisitos generales <a name="requisitos-generales">
 
 - Control de un IDE (cualquiera vale, recomendamos [Visual Studio Code](https://code.visualstudio.com/))
 - Entorno donde ejecutar JavaScript (preferiblemente [Node](https://nodejs.org/en/))
 - Experiencia desarrollando en JS o algún otro lenguaje de programación
 
-#### Conceptos básicos
+#### Conceptos básicos <a name="conceptos-basicos">
 
 ##### Requisitos
 
