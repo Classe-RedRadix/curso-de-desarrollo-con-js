@@ -6,7 +6,7 @@ Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuel
 
 Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que el usuario puede consultar para profundizar en esos temas.
 
-##### Nota sobre los recursos
+#### Nota sobre los recursos
 
 Incluímos los enlaces a las versiones inglesas de los materiales complementarios ya que estas ofrecen una garantía más consistente en cuanto a la calidad y exhaustividad del contenido. No obstante, la mayoría de enlaces disponen de traducciones al español.
 
@@ -24,15 +24,15 @@ Incluímos los enlaces a las versiones inglesas de los materiales complementario
 6. [Gestión de errores](#gestion-errores)
 7. [Calentamiento](#calentamiento)
 
-#### Requisitos generales <a name="requisitos-generales">
+## Requisitos generales <a name="requisitos-generales">
 
 - Control de un IDE (cualquiera vale, recomendamos [Visual Studio Code](https://code.visualstudio.com/))
 - Entorno donde ejecutar JavaScript (preferiblemente [Node](https://nodejs.org/en/))
 - Experiencia desarrollando en JS o algún otro lenguaje de programación
 
-#### Conceptos básicos <a name="conceptos-basicos">
+## Conceptos básicos <a name="conceptos-basicos">
 
-##### Requisitos
+### Requisitos
 
 Es **necesario** tener una comprensión firme de los tipos y conceptos básicos de JS.
 
@@ -62,7 +62,7 @@ Es **necesario** tener soltura creando, recorriendo, leyendo y asignando valores
 - for let of
 ```
 
-###### Recursos
+##### Recursos
 
 - [Valores y tipos](https://eloquentjavascript.net/01_values.html)
 - [Conceptos básicos y control de flujo](https://eloquentjavascript.net/02_program_structure.html)
@@ -70,7 +70,7 @@ Es **necesario** tener soltura creando, recorriendo, leyendo y asignando valores
 - [Array](https://www.w3schools.com/js/js_arrays.asp)
 - [Object](https://www.w3schools.com/js/js_objects.asp)
 
-###### Ejercicios prework
+##### Ejercicios prework
 
 ```javascript
 // Crea una función que devuelva los números pares
