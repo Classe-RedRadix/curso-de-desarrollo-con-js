@@ -1,18 +1,18 @@
 # Prework
 
-Bienvenido al curso de JavaScript Profesional de RedRadix. El objetivo de este curso es introducir al programador junior de JS en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y su comprensión del código. Por supuesto, el alumno implementará esas herramientas por su cuenta.
+Bienvenido al curso de JavaScript Profesional de RedRadix. El objetivo de este curso es introducir al programador junior de JS en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y comprensión del código. Por supuesto, el alumno implementará estas herramientas.
 
-Este es un curso 80% práctico y se pone especial enfasis en que los alumnos resuelvan los ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
+Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuelvan los ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
 
-Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que el usuario puede consultar para profundizar en esos temas.
+Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que el usuario puede consultar para profundizar en esos temas.
 
 ##### Nota sobre los recursos
 
-Incluímos los enlaces a las versiones inglesas de los recursos, ya que ofrecen una garantía más consistente en cuanto a la calidad y exhaustividad del contenido. No obstante, la mayoría de enlaces disponen de traducciones al español.
+Incluímos los enlaces a las versiones inglesas de los materiales complementarios ya que estas ofrecen una garantía más consistente en cuanto a la calidad y exhaustividad del contenido. No obstante, la mayoría de enlaces disponen de traducciones al español.
 
 - Las páginas de MDN están disponibles en español (opción de lenguaje en la esquina superior derecha).
 
-- Los enlaces a Eloquent Javascript también pueden consultarse en español en esta traducción del libro: https://eloquentjs-es.thedojo.mx
+- Los enlaces a Eloquent Javascript también pueden consultarse en español en esta traducción: https://eloquentjs-es.thedojo.mx
 
 #### Requisitos generales
 
