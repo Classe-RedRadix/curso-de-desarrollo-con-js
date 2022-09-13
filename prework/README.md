@@ -112,9 +112,9 @@ let array = [
 ];
 ```
 
-#### Funciones <a name="funciones">
+## Funciones <a name="funciones">
 
-##### Requisitos
+### Requisitos
 
 - Declaración y llamada de funciones
 - Parámetros, parámetros opcionales, parámetros por defecto
@@ -122,28 +122,28 @@ let array = [
 - Cómodidad leyendo arrow functions
 - `return`
 
-###### Recursos
+### Recursos
 
 - [Funciones (básico)](https://www.w3schools.com/js/js_functions.asp)
 - [Funciones](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Functions)
 - [Scope](https://www.w3schools.com/js/js_scope.asp)
 - [Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-#### Manipulación de strings <a name="manipulacion-strings">
+## Manipulación de strings <a name="manipulacion-strings">
 
-##### Requisitos
+### Requisitos
 
 - Concatenación de strings
 - Concatenación de strings y números
 - Manipulación de strings mediante `slice`, `split`, `join`
 - Parseo de números (`parseInt`, `parseFloat`)
 
-###### Recursos
+### Recursos
 
 - [Strings](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/String)
 - [Métodos strings](https://www.w3schools.com/js/js_string_methods.asp)
 
-###### Ejercicios prework
+### Ejercicios prework
 
 ```javascript
 // Crea una función que separe las palabras de una frase
@@ -172,43 +172,43 @@ function extractNumbers() {
 extractNumbers("3 20 6 1"); // [3, 20, 6, 1]
 ```
 
-#### Intervalos <a name="intervalos">
+## Intervalos <a name="intervalos">
 
-##### Requisitos
+### Requisitos
 
 - `setTimeout`, `setInterval`
 
-###### Recursos
+### Recursos
 
 - [setTimeout](https://www.w3schools.com/jsref/met_win_setTimeout.asp)
 - [setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp)
 
-###### Ejercicios prework
+### Ejercicios prework
 
 ```javascript
 // Crea una variable contado que empiece valiendo 0
 // Incrementa el contador cada segundo e imprímelo
 ```
 
-#### Gestión de errores <a name="gestion-errores">
+## Gestión de errores <a name="gestion-errores">
 
-##### Requisitos
+### Requisitos
 
 - Experiencia resolviendo errores en el código (debugging)
 - Comprender que un error interrumpe el flujo de ejecución del programa
 - Entender las trazas de la consola
 - `try/catch`
 
-###### Recursos
+### Recursos
 
 - [try/catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 - [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 
-#### Calentamiento <a name="calentamiento">
+## Calentamiento <a name="calentamiento">
 
 Durante el curso resolveremos algunos ejercicios de dificultad elevada. No todos los ejercicios son complicados, pero algunos que pueden llegar a resultar complicados para desarrolladores experimentados. Recomendamos calentar antes de empezar el curso con los siguientes ejercicios:
 
-##### Pyramid
+#### Pyramid
 
 ```javascript
 // Escribe una función que reciba un número positivo N
@@ -234,7 +234,7 @@ function pyramid(N) {
 }
 ```
 
-##### Chunk
+#### Chunk
 
 ```javascript
 // Escribe una función que dados un array y una longitud `size`
