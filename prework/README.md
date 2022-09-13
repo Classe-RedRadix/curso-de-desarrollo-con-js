@@ -1,8 +1,10 @@
 # Prework
 
-Bienvenido al curso de JavaScript Profesional de RedRadix. El objetivo de este curso es introducir al programador junior de JS en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y comprensión del código. Por supuesto, el alumno implementará estas herramientas.
+Bienvenido al curso de JavaScript Profesional de CLASSE.
 
-Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuelvan los ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
+El objetivo de este curso es introducir al programador junior de JS en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y comprensión del código. Por supuesto, el alumno será el que implemente estas herramientas.
+
+Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuelvan muchos ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor en formato _live coding_, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
 
 Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que pueden ser consultados para profundizar en los temas seleccionados.
 
@@ -26,7 +28,7 @@ Incluímos los enlaces a las versiones inglesas de los materiales complementario
 
 ## Requisitos generales <a name="requisitos-generales">
 
-- Control de un IDE (cualquiera vale, recomendamos [Visual Studio Code](https://code.visualstudio.com/))
+- Control de un editor de texto (cualquiera vale, recomendamos [Visual Studio Code](https://code.visualstudio.com/))
 - Entorno donde ejecutar JavaScript (preferiblemente [Node](https://nodejs.org/en/))
 - Experiencia desarrollando en JS o algún otro lenguaje de programación
 
