@@ -62,7 +62,7 @@ Es **necesario** tener soltura creando, recorriendo, leyendo y asignando valores
 - for let of
 ```
 
-##### Recursos
+### Recursos
 
 - [Valores y tipos](https://eloquentjavascript.net/01_values.html)
 - [Conceptos básicos y control de flujo](https://eloquentjavascript.net/02_program_structure.html)
@@ -70,7 +70,7 @@ Es **necesario** tener soltura creando, recorriendo, leyendo y asignando valores
 - [Array](https://www.w3schools.com/js/js_arrays.asp)
 - [Object](https://www.w3schools.com/js/js_objects.asp)
 
-##### Ejercicios prework
+### Ejercicios prework
 
 ```javascript
 // Crea una función que devuelva los números pares
