@@ -37,7 +37,7 @@ Introducimos el concepto de la desestructuración en el módulo de listas. Verem
 
 ## Contexto
 
-Para entender completamente cómo funcionan los objetos y que posibilidades nos permiten es completamente necesario entender como funciona el _contexto_ y la palabra reservada _this_. En esta sección exploramos qué es y como podemos manipularlo utilizando funciones nativas como `call`, `apply` y `bind`.
+Para entender completamente cómo funcionan los objetos y que posibilidades nos permiten es necesario estudiar como funciona el _contexto_ y la palabra reservada _this_. En esta sección exploramos qué es y como podemos manipularlo utilizando funciones nativas como `call`, `apply` y `bind`.
 
 ##### Recursos
 
