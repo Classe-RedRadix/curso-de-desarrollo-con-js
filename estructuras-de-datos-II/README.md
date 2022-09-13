@@ -11,9 +11,9 @@ const obj2 = { Homer: "Simpson" };
 console.log(obj1 === obj2); // false
 ```
 
-- [ ] Exploramos las consecuencias de este modelo en los ejercicios y aprovechamos para analizar que opciones nativas tenemos para recorrer objetos. Vistos los métodos nativos, implementamos algunos métodos propios para aumentar nuestro abanico de métodos para recorrer objetos:
+Exploramos las consecuencias de este modelo en los ejercicios y aprovechamos para analizar que opciones nativas tenemos para recorrer objetos. Vistos los métodos nativos, implementamos algunos métodos propios para aumentar nuestro abanico de métodos para recorrer objetos:
 
-* [ ] `mapValues`, `mapKeys`,
+- `mapValues`, `mapKeys`,
 
 ##### Recursos
 
