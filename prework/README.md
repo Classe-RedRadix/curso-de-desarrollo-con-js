@@ -17,7 +17,12 @@ Incluímos los enlaces a las versiones inglesas de los materiales complementario
 # Tabla de contenido
 
 1. [Requisitos generales](#requisitos-generales)
-1. [Conceptos básicos](#conceptos-basicos)
+2. [Conceptos básicos](#conceptos-basicos)
+3. [Funciones](#funciones)
+4. [Manipulación de strings](#manipulacion-strings)
+5. [Intervalos](#intervalos)
+6. [Gestión de errores](#gestion-errores)
+7. [Calentamiento](#calentamiento)
 
 #### Requisitos generales <a name="requisitos-generales">
 
@@ -107,7 +112,7 @@ let array = [
 ];
 ```
 
-#### Funciones
+#### Funciones <a name="funciones">
 
 ##### Requisitos
 
@@ -124,7 +129,7 @@ let array = [
 - [Scope](https://www.w3schools.com/js/js_scope.asp)
 - [Arrow function](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Functions/Arrow_functions)
 
-#### Tratamiento de strings
+#### Manipulación de strings <a name="manipulacion-strings">
 
 ##### Requisitos
 
@@ -167,7 +172,7 @@ function extractNumbers() {
 extractNumbers("3 20 6 1"); // [3, 20, 6, 1]
 ```
 
-#### Intervalos
+#### Intervalos <a name="intervalos">
 
 ##### Requisitos
 
@@ -185,7 +190,7 @@ extractNumbers("3 20 6 1"); // [3, 20, 6, 1]
 // Incrementa el contador cada segundo e imprímelo
 ```
 
-#### Gestión de errores
+#### Gestión de errores <a name="gestion-errores">
 
 ##### Requisitos
 
@@ -199,7 +204,7 @@ extractNumbers("3 20 6 1"); // [3, 20, 6, 1]
 - [try/catch](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Statements/try...catch)
 - [Error](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Error)
 
-#### Calentamiento
+#### Calentamiento <a name="calentamiento">
 
 Durante el curso resolveremos algunos ejercicios de dificultad elevada. No todos los ejercicios son complicados, pero algunos que pueden llegar a resultar complicados para desarrolladores experimentados. Recomendamos calentar antes de empezar el curso con los siguientes ejercicios:
 
