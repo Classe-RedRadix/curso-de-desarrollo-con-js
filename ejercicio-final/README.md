@@ -180,4 +180,3 @@ function asynk(generator) {
 ```
 
 </details>
-```
