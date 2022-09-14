@@ -138,7 +138,7 @@ main();
 
 El ejercicio consiste en implementar la función `asynk`, que debe seguir estos pasos:
 
-- recibe un generador que devuelve promesas (en el ejemplo, `main` es el generador)
+- recibe un generador que devuelve promesas
 - devuelve una nueva función (recuerda que async recibe y devuelve una función)
 - Esa función:
   - instancia el generador
