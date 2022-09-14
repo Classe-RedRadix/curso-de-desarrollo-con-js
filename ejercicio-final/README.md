@@ -177,4 +177,3 @@ function asynk(generator) {
 ```
 
 </details>
-```
