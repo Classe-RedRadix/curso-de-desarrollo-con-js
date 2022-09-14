@@ -91,7 +91,8 @@ Otra característica interesante de los generadores es que son iterables! Podemo
 
 ### Recursos
 
-- [Generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator) -[Generator.next](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next)
+- [Generator](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator)
+- [Generator.next](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Generator/next)
 - [Generadores e iteradores](https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Iterators_and_Generators)
 
 ## Ejercicio asynk/yield
@@ -177,3 +178,4 @@ function asynk(generator) {
 ```
 
 </details>
+```
