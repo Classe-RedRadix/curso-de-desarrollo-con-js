@@ -140,14 +140,16 @@ El ejercicio consiste en implementar la función `asynk`, que debe seguir estos 
 
 - recibe un generador que devuelve promesas
 - devuelve una nueva función (recuerda que async recibe y devuelve una función)
-- Esa función:
-  1. instancia el generador
-  2. llama a `next`
-  3. Si el generador ha acabado devuelve
-  4. Si no, **recupera** la promesa yieldeada `<- generator.next(value)`
-  5. Espera la promesa
-     - Si se rechaza, levanta una excepción
-     - Si se resuelve, llama al siguiente `next` de **forma recursiva** y volvemos a empezar desde el paso II
+
+Esa función debe:
+
+1. instancia el generador
+2. llama a `next`
+3. Si el generador ha acabado devuelve
+4. Si no, **recupera** la promesa yieldeada `<- generator.next(value)`
+5. Espera la promesa
+   - Si se rechaza, levanta una excepción
+   - Si se resuelve, llama al siguiente `next` de **forma recursiva** y volvemos a empezar desde el paso II
 
 Recuerda que asynk espera que todos los yields devuelvan promesas. Si intentas yieldear un valor debes wrapearlo en una promesa: `const wrappedValue = Promise.resolve(value)`
 
