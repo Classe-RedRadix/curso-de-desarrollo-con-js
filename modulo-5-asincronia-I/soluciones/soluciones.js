@@ -15,6 +15,21 @@ function ping() {
 
 ping();
 
+// Ejercicio template strings I
+function tag(tagname) {
+  return `<${tagname}></${tagname}>`;
+}
+
+console.log(tag("div"));
+
+// Ejercicio template strings II
+function printTime() {
+  const d = new Date();
+  console.log(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
+}
+
+setInterval(printTime, 1000);
+
 // Ejercicio asincronía I
 function throwDice(callback) {
   const result = Math.ceil(Math.random() * 6);
