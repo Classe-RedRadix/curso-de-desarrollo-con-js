@@ -1,4 +1,14 @@
-# Estructuras de datos II
+# Módulo 4 - Estructuras de datos II
+
+## Contenido
+
+- [Objetos](#objetos)
+- [Object.assign y destructuring](#object.assign-y-destructuring)
+- [Contexto](#contexto)
+- [Object.defineProperty](#object.defineproperty)
+- [Prototipos](#prototipos)
+
+## Objetos
 
 En este módulo estudiamos uno de los componentes más importantes de Javascript: los objetos. `Object` es el único dato compuesto del lenguaje y de él derivan directamente gran parte del resto de conceptos: listas, clases, errores, etc.
 

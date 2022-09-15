@@ -1,4 +1,13 @@
-# Estructuras de datos I
+# Módulo 2 - Estructuras de datos I
+
+## Contenido
+
+- [Listas](#listas)
+- [Operaciones sobre listas](#operaciones-sobre-listas)
+- [Recursividad](#tipos-de-datos)
+- [Destructuring](#arrow-functions)
+
+## Listas
 
 En este modulo exploramos diferentes aspectos de las listas de Javascript:
 

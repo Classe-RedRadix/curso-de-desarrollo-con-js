@@ -1,6 +1,11 @@
-# Asincronía II
+# Módulo 6 - Asincronía II
 
 En este módulo entramos más a fondo en la programación asíncrona en Javascript. Dejamos atrás los _callbacks_ para introducirnos en el uso de _promesas_ y _async/await_
+
+## Contenido
+
+- [Promesas](#promesas)
+- [Async/await](#async/await)
 
 ## Promesas
 

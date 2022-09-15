@@ -1,4 +1,12 @@
-# Funciones de primer orden
+# Módulo 3 - Funciones de primer orden
+
+## Contenido
+
+- [Funciones de primer orden](#funciones-de-primer-orden)
+- [Clausuras](#clausuras)
+- [Funciones que devuelven funciones](#funciones-que-devuelven-funciones)
+
+## Funciones de primer orden
 
 Llamamos funciones de primer orden a aquellas que:
 
