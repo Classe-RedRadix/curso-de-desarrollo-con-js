@@ -8,6 +8,8 @@ Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuel
 
 Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que pueden ser consultados para profundizar en los temas seleccionados.
 
+Estos requisitos son **requisitos mínimos**. El curso tiene un nivel considerablemente más alto de lo que se refleja en este prework.
+
 #### Nota sobre los recursos
 
 Incluímos los enlaces a las versiones inglesas de los materiales complementarios ya que estas ofrecen una garantía más consistente en cuanto a la calidad y exhaustividad del contenido. No obstante, la mayoría de enlaces disponen de traducciones al español.
