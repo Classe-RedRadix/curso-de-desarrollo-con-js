@@ -13,7 +13,7 @@ Antes de continuar con este repositorio te pedimos que [leas los contenidos comu
 
 ## Sobre este curso
 
-El objetivo de este curso es introducir al programador junior de JS en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y comprensión del código. Por supuesto, el alumno será el que implemente estas herramientas.
+El objetivo de este curso es introducir al programador junior de JS (o al programador de otro lenguaje) en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y comprensión del código. Por supuesto, el alumno será el que implemente estas herramientas.
 
 Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuelvan muchos ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor en formato _live coding_, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
 
