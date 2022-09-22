@@ -4,7 +4,7 @@ Bienvenido al curso de JavaScript Profesional de CLASSE.
 
 El objetivo de este curso es introducir al programador junior de JS en aspectos más avanzados del lenguaje y proporcionarle nuevas herramientas que le permitirán acelerar su desarrollo y comprensión del código. Por supuesto, el alumno será el que implemente estas herramientas.
 
-Este curso es 80% práctico y se pone especial enfasis en que los alumnos resuelvan muchos ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor en formato _live coding_, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
+Este curso es 80% práctico y se pone especial énfasis en que los alumnos resuelvan muchos ejercicios. Primero lo harán por su cuenta y después implementarán las soluciones junto al profesor en formato _live coding_, momento en el que podrán ver las mejores prácticas y resolver las dudas que hayan podido surgir.
 
 Para seguir el curso con fluidez es necesario tener una base sólida de los principios fundamentales del lenguaje JavaScript, así como práctica en su empleo. A continuación exponemos una lista de los conceptos que el estudiante debe dominar antes de empezar las clases. Incluímos también recursos que pueden ser consultados para profundizar en los temas seleccionados.
 
@@ -15,7 +15,6 @@ Estos requisitos son **requisitos mínimos**. El curso tiene un nivel considerab
 Incluímos los enlaces a las versiones inglesas de los materiales complementarios ya que estas ofrecen una garantía más consistente en cuanto a la calidad y exhaustividad del contenido. No obstante, la mayoría de enlaces disponen de traducciones al español.
 
 - Las páginas de MDN están disponibles en español (opción de lenguaje en la esquina superior derecha).
-
 - Los enlaces a Eloquent Javascript también pueden consultarse en español en esta traducción: https://eloquentjs-es.thedojo.mx
 
 # Tabla de contenido
@@ -30,9 +29,9 @@ Incluímos los enlaces a las versiones inglesas de los materiales complementario
 
 ## Requisitos generales <a name="requisitos-generales">
 
-- Control de un editor de texto (cualquiera vale, recomendamos [Visual Studio Code](https://code.visualstudio.com/))
-- Entorno donde ejecutar JavaScript (preferiblemente [Node](https://nodejs.org/en/))
-- Experiencia desarrollando en JS o algún otro lenguaje de programación
+- Control de un editor de texto (cualquiera vale, recomendamos [Visual Studio Code](https://code.visualstudio.com/)).
+- Entorno donde ejecutar JavaScript (preferiblemente [Node](https://nodejs.org/en/)).
+- Experiencia desarrollando en JS o algún otro lenguaje de programación.
 
 ## Conceptos básicos <a name="conceptos-basicos">
 
