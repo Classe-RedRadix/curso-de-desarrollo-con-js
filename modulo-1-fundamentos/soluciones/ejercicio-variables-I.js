@@ -1,8 +1,7 @@
 function createIndexLoggers() {
   let list = [];
 
-  for (let i = 0; i < 10; i++) {
-    // ^ hay que cambiar el var por un let
+  for (var i = 0; i < 10; i++) {
     list.push(function () {
       console.log(i);
     });
@@ -14,5 +13,5 @@ const loggers = createIndexLoggers();
 const firstLogger = loggers[0];
 const secondLogger = loggers[1];
 
-firstLogger(); // 0
-secondLogger(); // 1
+firstLogger(); // ?
+secondLogger(); // ?
