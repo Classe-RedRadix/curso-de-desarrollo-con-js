@@ -1,9 +1,3 @@
-// "Abc" -> ?
-// 20 -> ?
-// "20" -> ?
-// "0" -> ?
-// 0 -> ?
-// ""  -> ?
-// "undefined" -> ?
-// undefined -> ?
-// null -> ?
+const arrowFunction = () => ({ a: 1 });
+
+console.log(arrowFunction());
