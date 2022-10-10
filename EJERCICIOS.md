@@ -11,7 +11,7 @@
    git switch -c promocion-2022-octubre-ines # Creamos la rama y nos novemos a ella.
    ```
 
-   > Recordemos actualizar la rama personal, con la rama del curso. Esto se puede hacer antes o despues de nuestro commit. Ver el punto **Actualizar nuestra rama personal, con la rama del curso** para más información.
+   > Recordemos actualizar la rama personal, con la rama del curso. Esto se puede hacer antes o despues de nuestro commit. Ver el punto [**Actualizar nuestra rama personal, con la rama del curso**](#actualizar-nuestra-rama-personal-con-la-rama-del-curso) para más información.
 
 3. Editamos el archivo del ejercicio solicitado, o si no existe este archivo, **creamos uno donde implementaremos el código de la solución**.
 4. Añadimos ese archivo a staging y **creamos un commit con un mensaje descriptivo de lo que hemos hecho**, y subimos nuestra rama.
