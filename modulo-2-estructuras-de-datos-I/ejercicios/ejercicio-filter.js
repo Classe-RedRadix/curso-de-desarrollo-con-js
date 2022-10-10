@@ -6,3 +6,9 @@ const list = [
   { name: "lorem", important: false },
   { name: "ipsum", important: true },
 ];
+
+const oddNumbers = numbers => numbers.filter(number => number%2 !== 0 )
+console.log(oddNumbers(numbers))
+
+const importantValues = list => list.filter(element => element.important)
+console.log(importantValues(list))
