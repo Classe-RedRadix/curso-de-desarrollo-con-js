@@ -1,3 +1,9 @@
-const arrowFunction = () => ({ a: 1 });
-
-console.log(arrowFunction());
+// "Abc" -> Valor truthy
+// 20 -> Valor truthy
+// "20" -> Valor truthy
+// "0" -> Valor truthy
+// 0 -> Valor falsy
+// ""  -> Valor falsy
+// "undefined" -> Valor falsy
+// undefined -> Valor falsy
+// null -> Valor falsy
