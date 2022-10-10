@@ -10,5 +10,6 @@ function repeat(repetable, times) {
         }
     }
   }
-
+  
 repeat(() => console.log("SPAM!!"), 1000);
+
