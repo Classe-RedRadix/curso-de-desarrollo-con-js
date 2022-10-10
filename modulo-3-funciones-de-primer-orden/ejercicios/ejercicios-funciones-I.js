@@ -11,4 +11,4 @@ function repeat(repetable, times) {
     }
   }
 
-  repeat(() => console.log("SPAM!!"), 1000);
+repeat(() => console.log("SPAM!!"), 1000);
