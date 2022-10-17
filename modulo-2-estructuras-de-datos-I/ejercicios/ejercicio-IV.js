@@ -19,19 +19,19 @@
 // console.log(flattenDeep([1, [2, 3], [[4, 5], [6]], [[[8]]]]))
 
 const flattenDeep = array => {
-  let accumulator = []
+  let accumulator = [];
 
   array.forEach(element => {
-    const isArray = Array.isArray(element)
+    const isArray = Array.isArray(element);
 
     if (isArray) {
-      accumulator = [...accumulator, ...flattenDeep(element)]
+      accumulator = [...accumulator, ...flattenDeep(element)];
     } else {
-      accumulator.push(element)
+      accumulator.push(element);
     }
-  })
+  });
 
-  return accumulator
-}
+  return accumulator;
+};
 
-console.log(flattenDeep([1, [2, 3], [[4, 5], [6]], [[[8]]]]))
+console.log(flattenDeep([1, [2, 3], [[4, 5], [6]], [[[8]]]]));

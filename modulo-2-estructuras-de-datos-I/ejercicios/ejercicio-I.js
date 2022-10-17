@@ -1,14 +1,14 @@
 const getFirstAndLastElements = array => {
-  if (array.length === 0) return
+  if (array.length === 0) return;
   if (array.length === 1) {
-    console.log(array[0])
-    return
+    console.log(array[0]);
+    return;
   }
 
-  const firstElement = array[0]
-  const lastElement = array[array.length - 1]
+  const firstElement = array[0];
+  const lastElement = array[array.length - 1];
 
-  console.log(firstElement, lastElement)
-}
+  console.log(firstElement, lastElement);
+};
 
-getFirstAndLastElements([1, 2, 3, 4, 5])
+getFirstAndLastElements([1, 2, 3, 4, 5]);
