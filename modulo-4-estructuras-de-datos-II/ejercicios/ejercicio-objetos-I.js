@@ -1,14 +1,10 @@
 const obj = { a: 1, b: 2, c: 3 };
 
-// Solución propuesta en clase
-function mapKeys(object, transformer) {
-  function reducer(modifiedObject, key) {
-    const value = object[key];
-
-    modifiedObject[transformer(key)] = value;
-
-    return modifiedObject;
-  }
+const mapKeys = (object, morph) => {
+    return Object.fromEntries(
+        Object.entries(object)
+        .map(([ key, value ]) => [ morph(key), value ])
+      );
 
   return Object.keys(object).reduce(reducer, {});
 }
