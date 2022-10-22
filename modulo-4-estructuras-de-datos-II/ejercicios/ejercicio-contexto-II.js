@@ -11,6 +11,9 @@ function greeter() {
 }
 
 // Implementa aqui tu función bind
+function bind(user, fn){
+  return () => fn.call(user)
+} 
 
 const boundGreeter = bind(user, greeter);
 

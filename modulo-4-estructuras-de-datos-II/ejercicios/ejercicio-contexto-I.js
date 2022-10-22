@@ -8,4 +8,6 @@ let obj = {
   callFun: greeter,
 };
 
-obj.callFun();
+const number = {num: 10}
+
+obj.callFun.bind(number)
