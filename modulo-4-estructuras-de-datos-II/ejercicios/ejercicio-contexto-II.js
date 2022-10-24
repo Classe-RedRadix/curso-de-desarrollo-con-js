@@ -1,17 +1,23 @@
 // Crea una función bind que reciba los parámetros context y func
 // Debe devolver una versión de func que se ejecute usando el contexto context
 // Utiliza call o apply
-
-const user = {
-  name: "Peter",
+const bind = (context, fn) => {
+  return function (...args) {
+    return fn.call(context, ...args);
+  };
 };
 
-function greeter() {
-  console.log("My name is", this.name);
-}
+const obj = {
+  name: "Homer",
+  greet: function (surname) {
+    console.log(`Hola, soy ${this.name} ${surname}`);
+  },
+};
 
-// Implementa aqui tu función bind
+const newName = { name: "enrique" };
 
-const boundGreeter = bind(user, greeter);
+obj.greet("Gomez"); //normal
 
-boundGreeter(); // Este resultado debe ser igual que ejecutar el código greeter.call(user)
+const binded = bind(newName, obj.greet);
+
+binded("Diaz");
