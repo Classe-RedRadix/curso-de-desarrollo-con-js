@@ -4,5 +4,8 @@
 const obj = { a: 1, b: 2, c: 3 };
 
 // Implementa aqui tu función clone
+const clone = (object) => {
+  return Object.assign({}, { ...object });
+};
 
 console.log(clone(obj) !== obj); // Aqui esperamos true
