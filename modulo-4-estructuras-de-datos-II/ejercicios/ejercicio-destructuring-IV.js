@@ -1,6 +1,8 @@
 // Crea aqui la estructura que cumpla los requisitos para que
 // la destructuración anidada funcione.
 
+const estructura = [{ lista: [, { x: { y: 2 } }] }];
+
 const [
   {
     lista: [
@@ -11,3 +13,5 @@ const [
     ],
   },
 ] = estructura;
+
+console.log(dos);
