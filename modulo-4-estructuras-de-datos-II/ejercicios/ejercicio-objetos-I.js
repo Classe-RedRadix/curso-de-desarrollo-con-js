@@ -15,5 +15,3 @@ const result = obj => {
 
   return result;
 };
-
-console.log(result(obj)); // { A: 1, B: 2, C: 3 }
