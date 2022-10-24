@@ -3,9 +3,14 @@ function greeter() {
 }
 
 // Arregla este código sin modificar func ni obj
-
 let obj = {
   callFun: greeter,
 };
 
-obj.callFun();
+let context = {
+  num: 10,
+};
+
+const caller = () => obj.callFun.call(context);
+
+caller();
