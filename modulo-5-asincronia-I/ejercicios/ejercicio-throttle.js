@@ -1,0 +1,1 @@
+// Implementa la función throttle.
