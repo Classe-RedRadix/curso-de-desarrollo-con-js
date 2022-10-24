@@ -3,7 +3,7 @@
 // 50% de las veces, la promesa se resuelve y devuelve “cruz!”.
 // 50% de las veces, la promesa se rechaza y devuelve “cara…”.
 
-const throwDice = () => {
+const throwOneCoin = () => {
   return new Promise((resolve, reject) => {
     setTimeout(() => {
       const isSuccess = Math.random() > 0.5;
@@ -17,6 +17,6 @@ const throwDice = () => {
   });
 };
 
-throwDice()
+throwOneCoin()
   .then(() => console.log('cruz'))
   .catch(() => console.log('cara'));
