@@ -4,6 +4,10 @@
  * Devuelve el resultado utilizando un callback.
  */
 
+const throwDice = require("./03-ejercicio-asincronia-I");
+
+console.clear(); // Para evitar ver los logs del ejercicio 03
+
 function getPlayerScore(callback) {
   // ?
 }
@@ -11,3 +15,5 @@ function getPlayerScore(callback) {
 getPlayerScore((numbers) => {
   console.log(numbers); // Ejemplo: [3, 5]
 });
+
+module.exports = getPlayerScore;

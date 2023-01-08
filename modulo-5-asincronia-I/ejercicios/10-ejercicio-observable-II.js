@@ -1,28 +1,36 @@
-// Implementa un observable
+/**
+ * No deberíamos poder detonar una bomba más de una vez.
+ * Añade un método once al eventManager que suscriba un
+ * callback que se ejecutará sólo la primera vez que se
+ * emita ese evento.
+ */
 
-// AQUI, completa esta clase observable
-// o usa otro tipo de implementación (closures, etc)
-class EventManager {
-  on() {
-    // ?
+const EventManager = require("./09-ejercicio-observable-I");
+
+console.clear(); // Para evitar ver los logs del ejercicio 09
+
+class EventManagerOnce extends EventManager {
+  constructor() {
+    super();
   }
-  off() {
-    // ?
-  }
-  emit() {
+
+  once() {
     // ?
   }
 }
 
-// Código a ejecutar:
 const eventManager = new EventManager();
 
-const explosionCallback = () => console.log("explosion");
-const smokeCallback = () => console.log("smoke");
+const callback = () => {
+  console.log("explosion");
+  console.log("smoke");
+};
 
-eventManager.on("detonate", explosionCallback);
-eventManager.on("detonate", smokeCallback);
-eventManager.emit("detonate"); // Deberian ejecutarse los callbacks anteriores
+eventManager.once("detonate", callback);
+eventManager.emit("detonate");
+// Logs recibidos:
+// - smoke
+// - explosion
 
-eventManager.off("detonate", explosionCallback);
-eventManager.emit("detonate"); // Deberian ejecutarse solo el callback "smokeCallback"
+eventManager.emit("detonate");
+// Sin logs

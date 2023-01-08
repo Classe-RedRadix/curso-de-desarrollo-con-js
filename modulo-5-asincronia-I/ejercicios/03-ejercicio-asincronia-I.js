@@ -10,3 +10,5 @@ function throwDice(callback) {
 throwDice((number) => {
   console.log(number); // Ejemplo: 1
 });
+
+module.exports = throwDice;

@@ -1,7 +1,11 @@
-// Implementa un observable
+/**
+ * Crea una clase EventManager que actúe como un observable.
+ * Debe tener tres metodos:
+ * - on: Con el que nos suscribimos.
+ * - off: Con el que nos desuscribimos.
+ * - emit: Cuando lo llamamos, deben ejecutarse los callbacks asociados.
+ */
 
-// AQUI, completa esta clase observable
-// o usa otro tipo de implementación (closures, etc)
 class EventManager {
   on() {
     // ?
@@ -14,7 +18,6 @@ class EventManager {
   }
 }
 
-// Código a ejecutar:
 const eventManager = new EventManager();
 
 const explosionCallback = () => console.log("explosion");
@@ -22,7 +25,14 @@ const smokeCallback = () => console.log("smoke");
 
 eventManager.on("detonate", explosionCallback);
 eventManager.on("detonate", smokeCallback);
-eventManager.emit("detonate"); // Deberian ejecutarse los callbacks anteriores
+eventManager.emit("detonate");
+// Logs recibidos:
+// - explosion
+// - smoke
 
 eventManager.off("detonate", explosionCallback);
-eventManager.emit("detonate"); // Deberian ejecutarse solo el callback "smokeCallback"
+eventManager.emit("detonate");
+// Logs recibidos:
+// - smoke
+
+module.exports = EventManager;
