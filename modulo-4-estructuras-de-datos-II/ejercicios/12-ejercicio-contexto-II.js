@@ -5,15 +5,15 @@
  */
 
 const user = {
-  name: 'Peter',
-}
+  name: "Peter",
+};
 
 function greeter() {
-  console.log('My name is', this.name)
+  console.log("My name is", this.name);
 }
 
 // ?
 
-const boundGreeter = bind(user, greeter)
+const boundGreeter = bind(user, greeter);
 
-boundGreeter() // My name is Peter
+boundGreeter(); // My name is Peter

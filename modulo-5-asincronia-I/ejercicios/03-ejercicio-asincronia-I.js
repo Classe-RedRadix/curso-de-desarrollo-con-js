@@ -8,5 +8,5 @@ function throwDice(callback) {
 }
 
 throwDice((number) => {
-  console.log(number) // Ejemplo: 1
-})
+  console.log(number); // Ejemplo: 1
+});

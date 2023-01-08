@@ -10,5 +10,5 @@ function startGame(callback) {
 }
 
 startGame((game) => {
-  console.log(game) // Ejemplo: [[2, 2], [4, 6], [5, 1]]
-})
+  console.log(game); // Ejemplo: [[2, 2], [4, 6], [5, 1]]
+});

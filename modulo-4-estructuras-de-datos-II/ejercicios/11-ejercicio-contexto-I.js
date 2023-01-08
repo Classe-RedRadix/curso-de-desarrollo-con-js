@@ -3,11 +3,11 @@
  */
 
 function func() {
-  console.log(this.num) // 10
+  console.log(this.num); // 10
 }
 
 let obj = {
   callFunc: func,
-}
+};
 
-obj.callFunc()
+obj.callFunc();

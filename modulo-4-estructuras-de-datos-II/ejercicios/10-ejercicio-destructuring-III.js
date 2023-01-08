@@ -13,4 +13,4 @@ const [
       },
     ],
   },
-] = estructura
+] = estructura;

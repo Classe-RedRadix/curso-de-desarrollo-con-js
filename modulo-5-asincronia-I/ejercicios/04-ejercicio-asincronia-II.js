@@ -9,5 +9,5 @@ function getPlayerScore(callback) {
 }
 
 getPlayerScore((numbers) => {
-  console.log(numbers) // Ejemplo: [3, 5]
-})
+  console.log(numbers); // Ejemplo: [3, 5]
+});

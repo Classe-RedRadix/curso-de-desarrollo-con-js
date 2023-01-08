@@ -15,14 +15,14 @@ class EventManager {
 }
 
 // Código a ejecutar:
-const eventManager = new EventManager()
+const eventManager = new EventManager();
 
-const explosionCallback = () => console.log('explosion')
-const smokeCallback = () => console.log('smoke')
+const explosionCallback = () => console.log("explosion");
+const smokeCallback = () => console.log("smoke");
 
-eventManager.on('detonate', explosionCallback)
-eventManager.on('detonate', smokeCallback)
-eventManager.emit('detonate') // Deberian ejecutarse los callbacks anteriores
+eventManager.on("detonate", explosionCallback);
+eventManager.on("detonate", smokeCallback);
+eventManager.emit("detonate"); // Deberian ejecutarse los callbacks anteriores
 
-eventManager.off('detonate', explosionCallback)
-eventManager.emit('detonate') // Deberian ejecutarse solo el callback "smokeCallback"
+eventManager.off("detonate", explosionCallback);
+eventManager.emit("detonate"); // Deberian ejecutarse solo el callback "smokeCallback"

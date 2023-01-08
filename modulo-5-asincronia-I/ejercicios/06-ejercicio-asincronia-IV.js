@@ -1,5 +1,6 @@
 /**
- * Crea una función startGame que reciba un número N de jugadores y devuelva un array con los resultados de N jugadores (eg: [[2, 2], [4, 6], [5, 1], [4, 3]]).
+ * Crea una función startGame que reciba un número N de jugadores y devuelva un array con los resultados
+ * de N jugadores.
  * Utiliza la función getPlayerScore del ejercicio anterior para calcular los valores de las tiradas.
  * Devuelve el resultado utilizando un callback.
  * Puedes llamar varias funciones getPlayerScore en paralelo.
@@ -10,9 +11,9 @@ function startGame(playersCount, callback) {
 }
 
 startGame(2, (game) => {
-  console.log(game) // Ejemplo: [[2, 2], [4, 6]]
-})
+  console.log(game); // Ejemplo: [[2, 2], [4, 6]]
+});
 
 startGame(3, (game) => {
-  console.log(game) // Ejemplo: [[2, 2], [4, 6], [5, 1]]
-})
+  console.log(game); // Ejemplo: [[2, 2], [4, 6], [5, 1]]
+});
