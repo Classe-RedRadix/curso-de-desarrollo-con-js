@@ -6,8 +6,6 @@
 
 const throwDice = require("./03-ejercicio-asincronia-I");
 
-console.clear(); // Para evitar ver los logs del ejercicio 03
-
 function getPlayerScore(callback) {
   // ?
 }

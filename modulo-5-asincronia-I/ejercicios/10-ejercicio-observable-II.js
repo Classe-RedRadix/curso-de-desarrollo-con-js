@@ -7,8 +7,6 @@
 
 const EventManager = require("./09-ejercicio-observable-I");
 
-console.clear(); // Para evitar ver los logs del ejercicio 09
-
 class EventManagerOnce extends EventManager {
   constructor() {
     super();

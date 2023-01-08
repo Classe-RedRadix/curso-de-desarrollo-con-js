@@ -8,8 +8,6 @@
 
 const getPlayerScore = require("./04-ejercicio-asincronia-II");
 
-console.clear(); // Para evitar ver los logs del ejercicio 04
-
 function startGame(playersCount, callback) {
   // ?
 }
