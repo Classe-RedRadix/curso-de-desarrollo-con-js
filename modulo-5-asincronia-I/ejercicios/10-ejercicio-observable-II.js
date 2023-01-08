@@ -19,18 +19,18 @@ class EventManagerOnce extends EventManager {
   }
 }
 
-const eventManager = new EventManager();
+const eventManagerOnce = new EventManagerOnce();
 
 const callback = () => {
   console.log("explosion");
   console.log("smoke");
 };
 
-eventManager.once("detonate", callback);
-eventManager.emit("detonate");
+eventManagerOnce.once("detonate", callback);
+eventManagerOnce.emit("detonate");
 // Logs recibidos:
 // - smoke
 // - explosion
 
-eventManager.emit("detonate");
+eventManagerOnce.emit("detonate");
 // Sin logs
