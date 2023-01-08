@@ -6,5 +6,5 @@ const numpad = [
 ];
 
 console.log(numpad[1][1]); // 5
-console.log(numpad[3][1]); // ?
-console.log(numpad[3][2]); // ?
+console.log(numpad[3][1]); // 0
+console.log(numpad[3][2]); // null
