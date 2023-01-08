@@ -21,7 +21,7 @@ makeGreeter()();
 
 // 3. Pueden ser asignadas como variables
 const Person = {
-  greet: () => console.log(me()),
+  greet: me,
 };
 
 Person.greet();
