@@ -4,7 +4,11 @@
  */
 
 function flatten(matrix) {
-  // ?
+  let flatMatrix = [];
+
+  matrix.forEach((subArray) => subArray.forEach((elem) => flatMatrix.push(elem)));
+
+  return flatMatrix;
 }
 
 console.log(

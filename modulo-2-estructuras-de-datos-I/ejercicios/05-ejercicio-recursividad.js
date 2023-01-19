@@ -3,7 +3,18 @@
  */
 
 function sumDeep(matrix) {
-  // ?
+  console.log(`Matrix de esta iteración: ${ matrix }`);
+  let sum = 0;
+
+  for (const element of matrix) {
+    if (Array.isArray(element)) {
+      sum += sumDeep(element);
+    } else {
+      sum += element;
+    }
+  }
+
+  return sum;
 }
 
-sumDeep([1, [2, 3], [[4, 5]]]); // 15
+console.log(sumDeep([1, [2, 3], [[4, 5]], 1])); // 16

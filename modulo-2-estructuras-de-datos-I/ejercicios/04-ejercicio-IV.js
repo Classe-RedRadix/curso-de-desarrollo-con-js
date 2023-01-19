@@ -5,7 +5,17 @@
  */
 
 function flattenDeep(matrix) {
-  // ?
+  let flattened = [];
+
+  for (const element of matrix) {
+    if (Array.isArray(element)) {
+      flattened = flattened.concat(flattenDeep(element));
+    } else {
+      flattened.push(element);
+    }
+  }
+
+  return flattened;
 }
 
 console.log(

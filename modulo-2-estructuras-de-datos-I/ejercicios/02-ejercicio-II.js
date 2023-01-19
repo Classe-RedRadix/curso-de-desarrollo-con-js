@@ -7,8 +7,15 @@
  */
 
 function cut(list, start, end) {
-  // ?
+  if (end === undefined) end = list.length;
+  let array = [];
+  for (let i = 0; i < list.length; i++) {
+    if (i >= start && i<= end) {
+      array.push(list[i]);
+    }
+  }
+  return array;
 }
 
-cut(["a", "b", "c", "d"], 1, 2); // ["b", "c"]
-cut(["a", "b", "c", "d"], 1); // ["b", "c", "d"]
+console.log(cut(["a", "b", "c", "d"], 1, 2)); // ["b", "c"]
+console.log(cut(["a", "b", "c", "d"], 1)); // ["b", "c", "d"]
