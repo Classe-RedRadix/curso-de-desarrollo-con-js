@@ -4,7 +4,9 @@
  */
 
 function repeat(callback, times) {
-  // ?
+  for (let i = 0; i < times; i++) {
+    callback();
+  }
 }
 
 repeat(() => console.log("SPAM!"), 3); // SPAM! SPAM! SPAM!

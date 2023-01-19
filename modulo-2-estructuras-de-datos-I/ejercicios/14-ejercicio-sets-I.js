@@ -20,3 +20,15 @@ function SymetricDifference(listA, listB) {
 }
 
 console.log(SymetricDifference([1, 2, 3], [3, 4, 5])); // [1, 2, 4, 5]
+
+// Usando sets
+
+function symetricDifferenceWithSets(listA, listB) {
+  let listSet = new Set();
+
+  listA.concat(listB).forEach(item => listSet.add(item));
+
+  return [...listSet];
+}
+
+console.log(symetricDifferenceWithSets([1, 2, 3], [3, 4, 5])); // [1, 2, 4, 5]

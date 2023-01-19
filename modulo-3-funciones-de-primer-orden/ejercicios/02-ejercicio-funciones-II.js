@@ -4,7 +4,16 @@
  */
 
 function retry(callback, times) {
-  // ?
+  Array(times)
+    .fill(callback)
+    .forEach(func => {
+      try {
+        func();
+      } catch (error) {
+        console.log("lo que pasa si falla... Repito! " + times);
+        retry(callback, --times);
+      }
+    });
 }
 
 function maybeFailingLogger() {
