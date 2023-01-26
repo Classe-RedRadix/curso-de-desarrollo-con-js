@@ -4,7 +4,7 @@
 
 const obj = { uno: 1, dos: 2 };
 
-// ?
+const {uno, dos} = obj;
 
 console.log(uno); // 1
 console.log(dos); // 1

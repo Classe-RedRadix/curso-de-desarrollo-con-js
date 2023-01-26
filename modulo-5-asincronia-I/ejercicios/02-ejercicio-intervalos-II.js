@@ -3,4 +3,9 @@
  * No utilices setInterval
  */
 
-// ?
+function ping() {
+    console.log("ping");
+    setTimeout(ping, 500);
+}
+
+ping();

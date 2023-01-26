@@ -5,10 +5,32 @@
  * Si estamos devolviendo el valor memoizado, se debe emitir un log con el texto "memoized".
  */
 
-function memoize(/* ? */) {
-  // ?
+function memoize(fn) {
+  const cache = {};
+
+  return (...strings) => {
+    const key = strings.join("-");
+    const isCached = cache[key] !== undefined;
+
+    if (!isCached) {
+      console.log("memoizing...");
+      cache[key] = fn(...strings);
+    } else {
+      console.log("memoized...");
+    }
+
+    console.log("Caché: ", key, cache[key]);
+
+    return cache[key];
+  };
 }
 
-console.log(memoize("Hello", "World")); // ["HELLO", "WORLD"] (Debe verse en consola el log: "memoizing")
-console.log(memoize("Hello", "Jhon")); // ["HELLO", "JHON"] (Debe verse en consola el log: "memoizing")
-console.log(memoize("Hello", "World")); // ["HELLO", "WORLD"] (Debe verse en consola el log: "memoized")
+function toUppercase(...strings) {
+  return strings.map(word => word.toUpperCase());
+}
+
+const stringsToUpperCase = memoize(toUppercase);
+
+console.log(stringsToUpperCase("Hello", "World")); // ["HELLO", "WORLD"] (Debe verse en consola el log: "memoizing")
+console.log(stringsToUpperCase("Hello", "Jhon")); // ["HELLO", "JHON"] (Debe verse en consola el log: "memoizing")
+console.log(stringsToUpperCase("Hello", "World")); // ["HELLO", "WORLD"] (Debe verse en consola el log: "memoized")

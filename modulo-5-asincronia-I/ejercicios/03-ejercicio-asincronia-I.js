@@ -4,7 +4,8 @@
  */
 
 function throwDice(callback) {
-  // ?
+  const value = Math.min(Math.floor(Math.random() * 6));
+  setTimeout(() => callback(value), 1000);
 }
 
 throwDice((number) => {

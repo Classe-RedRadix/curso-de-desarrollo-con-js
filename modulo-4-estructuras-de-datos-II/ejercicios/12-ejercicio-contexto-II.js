@@ -14,6 +14,21 @@ function greeter() {
 
 // ?
 
-const boundGreeter = bind(user, greeter);
+//const boundGreeter = bind(user, greeter);
 
-boundGreeter(); // My name is Peter
+//boundGreeter(); // My name is Peter
+
+
+
+
+
+const obj = {};
+
+Object.defineProperty(obj, 'a', { value: 1, configurable: true });
+
+Object.defineProperty(obj, 'a', { value: 1, enumerable: true });
+
+// value --> undefined
+// enumerable (false)
+// configurable (false)
+// writable (false)
