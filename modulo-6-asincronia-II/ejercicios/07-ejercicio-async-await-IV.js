@@ -6,6 +6,9 @@
  * - Las promesas se deben lanzar secuencialmente
  */
 
-async function promiseAllSafe() {
+/*
+ * @param {Promise[]} promiseList
+ */
+async function promiseAllSafe(promiseList) {
   // ?
 }

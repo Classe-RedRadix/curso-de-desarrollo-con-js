@@ -5,7 +5,12 @@
 const getPlayerScore = require("./04-ejercicio-promesas-IV");
 
 function startGame() {
-  // ?
+  return new Promise((resolve) => {
+    getPlayerScore()
+    .then((score1) => getPlayerScore()
+                        .then((score2) => getPlayerScore()
+                                            .then((score3) => resolve([score1, score2, score3]))));
+  });
 }
 
 startGame().then((result) => {

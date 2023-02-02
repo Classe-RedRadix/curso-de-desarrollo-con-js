@@ -4,11 +4,15 @@
  */
 
 function wait(milliseconds) {
-  // ?
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve();
+    }, milliseconds);
+  });
 }
-
+/*
 wait(2000).then(() => {
   console.log("Han pasado dos segundos");
 }); // A los dos segundos debería aparecer un mensaje diciendo "Han pasado dos segundos"
-
+*/
 module.exports = wait;

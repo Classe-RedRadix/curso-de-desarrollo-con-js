@@ -3,8 +3,18 @@
  */
 
 function debounce(func, milliseconds) {
-  // ?
+
+  let timer = null
+  return (...args) => {
+      if (timer) {
+          clearTimeout(timer)
+      }
+      timer = setTimeout(() => func(...args), milliseconds)
+  }
+
 }
+
+
 
 const spam = () => console.log("SPAM!");
 

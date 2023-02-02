@@ -7,9 +7,15 @@
 const throwDice = require("./03-ejercicio-promesas-III");
 
 function getPlayerScore() {
-  // ?
+  return new Promise((resolve, reject) => {
+    throwDice()
+      .then((result1) => throwDice()
+                          .then((result2) => resolve([result1, result2]))
+                          .catch(e => console.error(e)))
+      .catch(e => console.error(e));
+  });
 }
-
+/*
 getPlayerScore().then((result) => console.log(result)); // Ejemplo: [3, 5]
-
+*/
 module.exports = getPlayerScore;
