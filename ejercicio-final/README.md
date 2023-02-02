@@ -160,22 +160,25 @@ Si quieres ir un paso más allá y poder anidar `asynk` asegurate de que asynk d
   
   ```javascript
 function asynk(generator) {
-  return function (...args) {
-    const gen = generator(...args);
+    // 👇🏻 Esta es la función que luego llamamos "main"
+    return () => {
+      const gen = generator(); // 👈🏻 Construimos el generador
 
-    function iterator(yielded) {
-      return new Promise((resolve) => {
-        // Si hemos llegado al final, devolvemos
-        // Wrappeamos en caso de que yielded.value no sea una promesa
-        // Resolvemos la promesa yieldeada con la siguiente llamada a `next`
-      });
+      function iterator(yielded) {
+          // 💡 "yielded" representa el valor devuelto con "yield",
+          // por lo que su propiedad "yielded.value" es una promesa.
+
+          // ❓ Pistas:
+          // - ¿Como podemos esperar el valor que devuelve la misma?
+          // - ¿Como devolvemos valores al generador?
+          // - ¿Y como podemos ejecutar la siguiente iteración?
+          // - ¿Como procesamos la siguiente iteración?
+      }
+
+      // ❓ Pista:
+      // - ¿Como ejecutamos la primera iteración del generador?
     }
-
-    return iterator(gen.next());
-
-    };
-
 }
+```
 
 </details>
-```
