@@ -4,7 +4,13 @@
  */
 
 function* generator() {
-  // ?
+  const maxIterator = 50;
+  let accumulator = 1;
+
+  while (accumulator < maxIterator) {
+    yield accumulator;
+    accumulator += 2;
+  }
 }
 
 const gen = generator();

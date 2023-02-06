@@ -5,11 +5,18 @@
  * - Aunque volvamos a llamar a next(), no deberiamos recibir ningun mensaje por consola.
  */
 
-function* generator() {
-  // ?
+function* generator(maxIterations) {
+
+  for (let i = 0; i < maxIterations; i++) {
+    const outsideValue = yield console.log("Sigo ejecutándome...");;
+    if (outsideValue?.stop) {
+      return console.log("Voy a parar.");
+    };
+  }
+  
 }
 
-const gen = generator(1000);
+const gen = generator(100);
 
 gen.next(); // "Sigo ejecutandome..."
 gen.next(); // "Sigo ejecutandome..."

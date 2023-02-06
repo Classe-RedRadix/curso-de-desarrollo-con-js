@@ -4,7 +4,11 @@
  */
 
 function* generator() {
-  // ?
+  const chain = this.split("");
+  
+  for (let letter of chain) {
+    yield letter;
+  }
 }
 
 String.prototype[Symbol.iterator] = generator;

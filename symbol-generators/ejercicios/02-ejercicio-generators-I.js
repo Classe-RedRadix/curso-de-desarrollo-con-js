@@ -3,8 +3,15 @@
  * que el valor de un numero que generemos.
  */
 
+
 function* generator() {
-  // ?
+
+  let accumulator = 0;
+  
+  while (accumulator < this) {
+    accumulator += 1;
+    yield accumulator;
+  }
 }
 
 Number.prototype[Symbol.iterator] = generator;
@@ -15,3 +22,4 @@ const number = 10;
 for (const iteration of number) {
   console.log(iteration);
 }
+

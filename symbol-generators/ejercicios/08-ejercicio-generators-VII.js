@@ -4,7 +4,11 @@
  */
 
 function* generator(initialValue) {
-  // ?
+  let value = initialValue;
+  
+  while (true) {
+    value = yield value;
+  }
 }
 
 function main() {
