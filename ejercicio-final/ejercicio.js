@@ -8,16 +8,17 @@ function asynk(generator) {
     const gen = generator(...args);
   
     function iterator(yielded) {
+      console.log("iterator: ", yielded);
       return new Promise(async (resolve) => {
 
         // Si hemos llegado al final, devolvemos
-        if (yielded.done) return(yielded.value);
+        if (yielded.done) return yielded.value;
 
         // Wrappeamos en caso de que yielded.value no sea una promesa
-        const promise = Promise.resolve(yielded.value);
+        //const promise = Promise.resolve(yielded.value);
 
         // Resolvemos la promesa yieldeada con la siguiente llamada a `next`
-        resolve(iterator(gen.next(await promise)));
+        resolve(iterator(gen.next(await yielded.value)));
       });
     }
 
@@ -46,4 +47,11 @@ const main = asynk(function* () {
   }
 });
 
-main();
+//main();
+
+async function test() {
+  await main();
+  await main();
+}
+
+test();
