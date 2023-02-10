@@ -4,27 +4,47 @@ const futureValue = (value, millisecondsWait) =>
   new Promise((resolve) => setTimeout(() => resolve(value), millisecondsWait));
 
 function asynk(generator) {
-  // ?
+  return () => {
+    const gen = generator();
+
+    recursiveFunction(gen.next());
+
+    async function recursiveFunction(yieldedValue) {
+      if (yieldedValue.done) return;
+      try {
+        const value = await yieldedValue.value;
+        recursiveFunction(gen.next(value));
+      } catch (error) {
+        console.log(error);
+        // CAPTURA ERROR COMENTADO DESPUÉS DEL FOR EN main()
+      }
+    }
+  };
 }
 
 const main = asynk(function* () {
   const one = yield futureValue(1, 1000);
   console.log(one); // 1 -> al segundo
-  const two = yield futureValue(2, 1000);
+  const two = yield futureValue(2, 2000);
   console.log(two); // 2 -> a los dos segundos
 
   /**
    * 👇🏻 (Opcional) Descomentar cuando funcione el anterior,
    * deberia funcionar sin hacer cambios en nuestra función "asynk".
    */
-  // const letters = ["C", "L", "A", "S", "S", "E"];
+  const letters = ["C", "L", "A", "S", "S", "E"];
 
-  // for (let index = 0; index < letters.length; index++) {
-  //   const wait = index * 1000 || 1000;
-  //   const letter = yield futureValue(letters[index], wait);
+  for (let index = 0; index < letters.length; index++) {
+    const wait = index * 1000 || 1000;
+    const letter = yield futureValue(letters[index], wait);
 
-  //   console.log("Letter #%d is %s", index, letter);
-  // }
+    console.log("Letter #%d is %s", index, letter);
+  }
+
+  // PRUEBA PARA COMPROBAR Catch(error) { }
+
+  // const error = yield futureValue(error, 1000);
+  // console.log(error); // Lanza mensaje de error
 });
 
 main();
