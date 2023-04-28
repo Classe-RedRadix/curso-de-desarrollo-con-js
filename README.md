@@ -51,6 +51,6 @@ Para realizar el curso de JavaScript Profesional necesitas tener instalado en tu
 
 ## Prework
 
-Si ya eres alumna o alumno del curso te pedimos que realices el apartado de [Prework](./prework). El objetivo es que veas el nivel mínimo con el que empiezan las clases. Si dudas si tienes el nivel mínimo por favor escribe por Slack o Discord al profe o al coordinador técnico de Classe.
+Si ya eres alumna o alumno del curso te pedimos que realices el apartado de [Prework](./prework). El objetivo es que veas el nivel mínimo con el que empiezan las clases. **Si dudas si tienes el nivel mínimo por favor escribe por Slack o Discord al profe o al coordinador técnico de Classe.**
 
 En este [prework](./prework) encontrarás lecturas interesantes y ejercicios para ir calentando motores.
