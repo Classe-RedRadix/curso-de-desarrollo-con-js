@@ -1,6 +1,6 @@
 ![CLASSE](https://user-images.githubusercontent.com/3619686/188471959-0698e30f-32a8-4b01-b10a-378a9c15439d.png)
 
-# CLASSE: Curso de JavaScript Profesional
+# CLASSE: Curso de Desarrollo con JavaScript
 
 Antes de continuar con este repositorio te pedimos que [leas los contenidos comunes a todos los cursos de Classe](https://github.com/Classe-Redradix/curso-contenidos-comunes) donde te explicamos lo requerimientos técnicos que necesitas, cómo trabajamos a través de Slack o cómo puedes entregar tus ejercicios.
 
@@ -48,3 +48,9 @@ Para realizar el curso de JavaScript Profesional necesitas tener instalado en tu
 - Git: [aquí](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-git.md) tienes una guía sobre para qué lo usamos y algunos recursos básicos.
 - NodeJS: [breve guía de instalación](https://github.com/Classe-Redradix/curso-contenidos-comunes/blob/main/herramienta-nodejs.md).
 - Un editor de código: puedes utilizar el que quieras, te recomendamos [VS Code](https://code.visualstudio.com/download).
+
+## Prework
+
+Si ya eres alumna o alumno del curso te pedimos que realices el apartado de [Prework](./prework). El objetivo es que veas el nivel mínimo con el que empiezan las clases. **Si dudas si tienes el nivel mínimo por favor escribe por Slack o Discord al profe o al coordinador técnico de Classe.**
+
+En este [prework](./prework) encontrarás lecturas interesantes y ejercicios para ir calentando motores.
