@@ -1,6 +1,6 @@
 ![CLASSE](https://user-images.githubusercontent.com/3619686/188471959-0698e30f-32a8-4b01-b10a-378a9c15439d.png)
 
-# CLASSE: Curso de JavaScript Profesional
+# CLASSE: Curso de Desarrollo con JavaScript
 
 Antes de continuar con este repositorio te pedimos que [leas los contenidos comunes a todos los cursos de Classe](https://github.com/Classe-Redradix/curso-contenidos-comunes) donde te explicamos lo requerimientos técnicos que necesitas, cómo trabajamos a través de Slack o cómo puedes entregar tus ejercicios.
 
