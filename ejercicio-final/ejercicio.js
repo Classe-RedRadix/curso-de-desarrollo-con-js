@@ -5,8 +5,6 @@ const futureValue = (value, millisecondsWait) =>
 
 function asynk(generator) {
   const gen = generator();
-  /*
-   */
   function recoursiveAsynk(yieldReturn) {
     if (!yieldReturn.done) {
       yieldReturn.value
