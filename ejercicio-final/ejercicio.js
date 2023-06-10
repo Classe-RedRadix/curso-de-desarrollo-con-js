@@ -4,7 +4,18 @@ const futureValue = (value, millisecondsWait) =>
   new Promise((resolve) => setTimeout(() => resolve(value), millisecondsWait));
 
 function asynk(generator) {
-  // ?
+  return function (){
+    return new Promise((resolve, reject) =>{
+      function iteration(yielded){
+        if (yielded.done){
+          resolve(yielded.value)
+        }else {
+          Promise.resolve(yielded.value).then(result =>iteration(generator().next(result))).catch(error => reject(error))
+        }
+      }
+      iteration(generator().next())
+    });
+  }
 }
 
 const main = asynk(function* () {
