@@ -7,25 +7,26 @@ const futureValue = (value, millisecondsWait) =>
 
   function asynk(generator) {
     const gen = generator();
-    
+
     // we have to return a function
     return function() {
       // this is the inner function which does the recursive calls. 
-      // Its argument is the next() return
-      function recursive_asynk(next_result) {
+      // Its argument is the value received from yield
+      function recursive_asynk(yield_value) {
         return new Promise((resolve, reject) => {
-          if (next_result.done === true) {
+          const next = gen.next(yield_value);
+          if (next.done === true) {
             return resolve();
           }
 
-          next_result.value.then((val) => {
-            resolve(recursive_asynk(gen.next(val)));
+          next.value.then((val) => {
+            resolve(recursive_asynk(val));
           }).catch(() => reject(new Error("Asynk call Error")));
         });
       }
 
       // Here starts everything, with the first next call
-      return recursive_asynk(gen.next());
+      return recursive_asynk();
     }
   }
 
