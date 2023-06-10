@@ -3,9 +3,18 @@
 const futureValue = (value, millisecondsWait) =>
   new Promise((resolve) => setTimeout(() => resolve(value), millisecondsWait));
 
-function asynk(generator) {
-  // ?
-}
+  function asynk(generator) {
+    const gen = generator();
+  
+    function recursive_asynk(v) {
+      const next = gen.next(v);
+      if (next.done === true) {
+        return;
+      }
+      next.value.then((value) => {recursive_asynk(value)}).catch(() => { throw new Error("Asynk call error") });
+    }
+    return recursive_asynk;
+  }
 
 const main = asynk(function* () {
   const one = yield futureValue(1, 1000);
@@ -13,18 +22,14 @@ const main = asynk(function* () {
   const two = yield futureValue(2, 1000);
   console.log(two); // 2 -> a los dos segundos
 
-  /**
-   * 👇🏻 (Opcional) Descomentar cuando funcione el anterior,
-   * deberia funcionar sin hacer cambios en nuestra función "asynk".
-   */
-  // const letters = ["C", "L", "A", "S", "S", "E"];
+  const letters = ["C", "L", "A", "S", "S", "E"];
 
-  // for (let index = 0; index < letters.length; index++) {
-  //   const wait = index * 1000 || 1000;
-  //   const letter = yield futureValue(letters[index], wait);
+  for (let index = 0; index < letters.length; index++) {
+    const wait = index * 1000 || 1000;
+    const letter = yield futureValue(letters[index], wait);
 
-  //   console.log("Letter #%d is %s", index, letter);
-  // }
+    console.log("Letter #%d is %s", index, letter);
+  }
 });
 
 main();
