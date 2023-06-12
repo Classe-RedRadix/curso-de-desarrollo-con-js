@@ -4,7 +4,23 @@ const futureValue = (value, millisecondsWait) =>
   new Promise((resolve) => setTimeout(() => resolve(value), millisecondsWait));
 
 function asynk(generator) {
-  // ?
+  return function(){
+    const gen = generator();
+    recursiveNext("Dummy value");
+    function recursiveNext(value){
+      const nextObject = gen.next(value);
+      if (nextObject.done === true){
+        return;
+      } else {
+        const promise = nextObject.value;
+        promise.then((value) => {
+          recursiveNext(value);
+        }).catch((error) => {
+          throw new Error(error);
+        });
+      }
+    }
+  }
 }
 
 const main = asynk(function* () {
@@ -17,14 +33,14 @@ const main = asynk(function* () {
    * 👇🏻 (Opcional) Descomentar cuando funcione el anterior,
    * deberia funcionar sin hacer cambios en nuestra función "asynk".
    */
-  // const letters = ["C", "L", "A", "S", "S", "E"];
+  const letters = ["C", "L", "A", "S", "S", "E"];
 
-  // for (let index = 0; index < letters.length; index++) {
-  //   const wait = index * 1000 || 1000;
-  //   const letter = yield futureValue(letters[index], wait);
+  for (let index = 0; index < letters.length; index++) {
+    const wait = index * 1000 || 1000;
+    const letter = yield futureValue(letters[index], wait);
 
-  //   console.log("Letter #%d is %s", index, letter);
-  // }
+    console.log("Letter #%d is %s", index, letter);
+  }
 });
 
 main();
