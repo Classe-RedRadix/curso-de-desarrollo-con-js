@@ -2,8 +2,8 @@
 
 function printEnds(list) {
   if (!list.length) return;
-  console.log(list[0]);
-  if (list.length > 1) console.log(list[list.length - 1]);
+  print.log(list[0]);
+  if (list.length > 1) print.log(list[list.length - 1]);
 }
 
 printEnds([]);
@@ -20,9 +20,9 @@ function cut(list, a, b) {
   return result;
 }
 
-console.log(cut(["a", "b", "c"], 0, 2));
-console.log(cut(["a", "b", "c"], 1, 1));
-console.log(cut(["a", "b", "c"], 1));
+print.log(cut(["a", "b", "c"], 0, 2));
+print.log(cut(["a", "b", "c"], 1, 1));
+print.log(cut(["a", "b", "c"], 1));
 
 // Ejercicio listas III
 function flatten(list) {
@@ -33,7 +33,7 @@ function flatten(list) {
   return result;
 }
 
-console.log(
+print.log(
   flatten([
     ["A1", "A2", "A3"],
     ["B1", "B2", "B3"],
@@ -53,7 +53,7 @@ function flattenDeep(node) {
   }
 }
 
-console.log(flattenDeep([1, [2, 3], [[4, 5], [6]], [[[7]]]]));
+print.log(flattenDeep([1, [2, 3], [[4, 5], [6]], [[[7]]]]));
 
 // Ejercicio recursividad
 function sumDeep(node) {
@@ -67,7 +67,7 @@ function sumDeep(node) {
   }
 }
 
-console.log(sumDeep([1, [2, 3], [[4, 5]]]));
+print.log(sumDeep([1, [2, 3], [[4, 5]]]));
 
 // Ejercicio destructuring
 // 2
@@ -76,12 +76,12 @@ console.log(sumDeep([1, [2, 3], [[4, 5]]]));
 // [3]
 
 // Ejercicio map I
-console.log([8, 12, 20].map((x) => x / 2));
-console.log([1, 7, 50].map((x) => x.toString()));
-console.log([-2, 5, 15, -7, -8].map((x) => (x > 0 ? "+" : "-")));
+print.log([8, 12, 20].map((x) => x / 2));
+print.log([1, 7, 50].map((x) => x.toString()));
+print.log([-2, 5, 15, -7, -8].map((x) => (x > 0 ? "+" : "-")));
 
 // Ejercicio map II
-console.log(
+print.log(
   ["lorem ipsum dolor", "hello world"].map((sentence) =>
     sentence
       .split(" ")
@@ -90,12 +90,12 @@ console.log(
   )
 );
 
-console.log([{ name: "Alberto" }, { name: "Fran" }].map((obj) => obj.name));
+print.log([{ name: "Alberto" }, { name: "Fran" }].map((obj) => obj.name));
 
 // Ejercicio map III
 const mapInput = [[1, 2], [34, 20, 5], [11], [2, 4]];
 
-console.log(
+print.log(
   mapInput.map((list) => {
     let result = 0;
     for (let item of list) {
@@ -111,20 +111,20 @@ const filterInput = [
   { name: "ipsum", important: true },
 ];
 
-console.log(filterInput.filter((item) => item.important));
+print.log(filterInput.filter((item) => item.important));
 
 // Ejercicio reduce I
-console.log([1, 2, 3].reduce((acc, x) => acc + x, 0));
-console.log(["a", "b", "c"].reduce((acc, x) => acc + x, ""));
+print.log([1, 2, 3].reduce((acc, x) => acc + x, 0));
+print.log(["a", "b", "c"].reduce((acc, x) => acc + x, ""));
 
 // Ejercicio reduce II
-console.log([1, -2, 3].reduce((acc, x) => (x > 0 ? acc + x : acc), 0));
-console.log([1, -2, 3].reduce((acc, x) => (x > acc ? x : acc), -Infinity));
+print.log([1, -2, 3].reduce((acc, x) => (x > 0 ? acc + x : acc), 0));
+print.log([1, -2, 3].reduce((acc, x) => (x > acc ? x : acc), -Infinity));
 
 // Ejercicio reduce III
 const reduceInput = [[1, 2], [34, 20, 5], [11], [2, 4]];
 
-console.log(
+print.log(
   reduceInput.reduce((acc, x) => [...acc, x.reduce((acc, x) => acc + x, 0)], [])
 );
 
@@ -137,7 +137,7 @@ function difference(a, b) {
   return result;
 }
 
-console.log(difference([1, 2, 3], [3, 4, 5]));
+print.log(difference([1, 2, 3], [3, 4, 5]));
 
 // Ejercicio sets II
 function intersection(a, b) {
@@ -148,4 +148,4 @@ function intersection(a, b) {
   return result;
 }
 
-console.log(intersection([1, 2, 3], [3, 4, 5]));
+print.log(intersection([1, 2, 3], [3, 4, 5]));

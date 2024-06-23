@@ -5,7 +5,7 @@ function createFns() {
   for (let i = 0; i < 10; i++) {
     // ^ hay que cambiar el var por un let
     fns.push(function () {
-      console.log(i);
+      print.log(i);
     });
   }
   return fns;

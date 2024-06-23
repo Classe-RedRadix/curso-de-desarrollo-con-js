@@ -92,7 +92,7 @@ Por ejemplo, si queremos imprimir todos los elementos de un árbol de listas:
 
 ```javascript
 function printTree(node) {
-  if (typeof node == "number") console.log(node);
+  if (typeof node == "number") print.log(node);
   if (Array.isArray(node)) {
     for (let child of node) {
       printTree(child);
@@ -117,9 +117,9 @@ La desestructuración de listas en Javascript se implementa a traves de la sigui
 
 ```javascript
 const [a, b, ...c] = [10, 20, 30, 40, 50];
-console.log(a); // 10
-console.log(b); // 20
-console.log(c); // [30, 40, 50]
+print.log(a); // 10
+print.log(b); // 20
+print.log(c); // [30, 40, 50]
 ```
 
 En esta sección también vamos a ver los operadores _rest_ y _spread_. Estos nos facilitan la gestión de los parámetros de las funciones y extienden lo que somos capaces de hacer con ellos, por ejemplo, permitiéndonos implementar una función que recibe un número _indeterminado_ de parámetros.

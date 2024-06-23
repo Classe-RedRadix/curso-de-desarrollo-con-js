@@ -17,13 +17,13 @@ Este módulo incluye los conceptos relacionados con la asincronía basada en cal
 Empezamos analizando las herramientas asíncronas más fundamentales de Javascript. `setTimeout` y `setInterval`. En esta sección aprovechamos para analizar como la asincronía separa la ejecución del código en varias ramas que se ejecutan 'paralelamente':
 
 ```javascript
-console.log("uno");
+print.log("uno");
 
 setTimeout(function () {
-  console.log("dos");
+  print.log("dos");
 }, 1000);
 
-console.log("tres");
+print.log("tres");
 
 // uno
 // tres

@@ -8,7 +8,7 @@ function throwOneCoin() {
   });
 }
 
-throwOneCoin().then(console.log).catch(console.error);
+throwOneCoin().then(print.log).catch(print.error);
 
 // Ejercicio promesas II
 function wait(ms) {
@@ -17,7 +17,7 @@ function wait(ms) {
   });
 }
 
-wait(2000).then(() => console.log("Han pasado dos segundos"));
+wait(2000).then(() => print.log("Han pasado dos segundos"));
 
 // Ejercicio promesas III
 function throwDice() {
@@ -26,7 +26,7 @@ function throwDice() {
   });
 }
 
-throwDice().then(console.log);
+throwDice().then(print.log);
 
 // Ejercicio promesas IV
 function getPlayerScore() {
@@ -39,7 +39,7 @@ function getPlayerScore() {
   });
 }
 
-getPlayerScore().then(console.log);
+getPlayerScore().then(print.log);
 
 // Ejercicio promesas V
 function startGame() {
@@ -54,7 +54,7 @@ function startGame() {
   });
 }
 
-startGame().then(console.log);
+startGame().then(print.log);
 
 // Ejercicio promesas VI
 function getPlayerScore2() {
@@ -65,7 +65,7 @@ function startGame2() {
   return Promise.all([getPlayerScore2(), getPlayerScore2(), getPlayerScore2()]);
 }
 
-startGame2().then(console.log);
+startGame2().then(print.log);
 
 // Ejercicio async/await II
 function asyncMap(list, func) {
@@ -75,7 +75,7 @@ function asyncMap(list, func) {
 
 (async () => {
   const results = await asyncMap(["Homer", "Fry", "Peter"], throwDice);
-  console.log(results);
+  print.log(results);
 })();
 
 // Ejercicio async/await III
@@ -90,7 +90,7 @@ async function asyncSequentialMap(list, func) {
 
 (async () => {
   const results = await asyncMap(["Homer", "Fry", "Peter"], throwDice);
-  console.log(results);
+  print.log(results);
 })();
 
 // Ejercicio async/await IV
@@ -100,7 +100,7 @@ async function promiseAllSafe(promises) {
     try {
       results.push(await promise);
     } catch (err) {
-      console.error("Error:", err);
+      print.error("Error:", err);
       results.push(null);
     }
   }
@@ -108,7 +108,7 @@ async function promiseAllSafe(promises) {
 }
 
 (async () => {
-  console.log(
+  print.log(
     await promiseAllSafe([
       Promise.resolve(1),
       Promise.reject("stack overflow"),
@@ -121,7 +121,7 @@ async function promiseAllSafe(promises) {
 const retry = (n, callback) => {
   return new Promise((resolve, reject) => {
     if (n === 0) return reject(`Retries exceeded`);
-    console.log("Trying...");
+    print.log("Trying...");
     callback()
       .then(resolve)
       .catch(async () => await retry(n - 1, callback).catch(reject));
@@ -130,7 +130,7 @@ const retry = (n, callback) => {
 
 (async () => {
   const result = await retry(3, () => Promise.resolve("worked"));
-  console.log(result); // "worked"
+  print.log(result); // "worked"
   // Realizará tres intentos y levantará excepción
   retry(3, () => Promise.reject("won't work"));
 })();
@@ -153,5 +153,5 @@ async function calculateDirSize(path, cb) {
 }
 
 calculateDirSize(".").then((size) => {
-  console.log("Total:", (size / 1024).toFixed(2), "Kb");
+  print.log("Total:", (size / 1024).toFixed(2), "Kb");
 });

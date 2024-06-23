@@ -2,13 +2,13 @@
 let counter = 0;
 
 setInterval(() => {
-  console.log(++counter);
+  print.log(++counter);
 }, 1000);
 
 // Ejercicio intervalos II
 function ping() {
   setTimeout(() => {
-    console.log("ping");
+    print.log("ping");
     ping();
   }, 500);
 }
@@ -20,12 +20,12 @@ function tag(tagname) {
   return `<${tagname}></${tagname}>`;
 }
 
-console.log(tag("div"));
+print.log(tag("div"));
 
 // Ejercicio template strings II
 function printTime() {
   const d = new Date();
-  console.log(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
+  print.log(`${d.getHours()}:${d.getMinutes()}:${d.getSeconds()}`);
 }
 
 setInterval(printTime, 1000);
@@ -36,7 +36,7 @@ function throwDice(callback) {
   setTimeout(() => callback(result), 1000);
 }
 
-throwDice(console.log);
+throwDice(print.log);
 
 // Ejercicio asincronía II
 function getPlayerScore(callback) {
@@ -47,7 +47,7 @@ function getPlayerScore(callback) {
   });
 }
 
-getPlayerScore(console.log);
+getPlayerScore(print.log);
 
 // Ejercicio asincronía III
 function startGame(callback) {
@@ -60,7 +60,7 @@ function startGame(callback) {
   });
 }
 
-startGame(console.log);
+startGame(print.log);
 
 // Ejercicio asincronía IV
 function startGame2(players, callback) {
@@ -74,7 +74,7 @@ function startGame2(players, callback) {
   }
 }
 
-startGame2(5, console.log);
+startGame2(5, print.log);
 
 // Ejercicio filesystem
 const fs = require("fs");
@@ -100,7 +100,7 @@ function calculateDirSize(dirPath, cb) {
 }
 
 calculateDirSize(".", (err, size) => {
-  console.log("Total:", (size / 1024).toFixed(2), "Kb");
+  print.log("Total:", (size / 1024).toFixed(2), "Kb");
 });
 
 // Ejercicio asyncMap
@@ -142,7 +142,7 @@ function calculateDirSize2(path, cb) {
 }
 
 calculateDirSize2(".", (err, size) => {
-  console.log("Total:", (size / 1024).toFixed(2), "Kb");
+  print.log("Total:", (size / 1024).toFixed(2), "Kb");
 });
 
 // Ejercicio filesystem III
@@ -169,7 +169,7 @@ function calculateDirSize3(path, cb) {
 }
 
 calculateDirSize3(".", (err, size) => {
-  console.log("Total:", (size / 1024).toFixed(2), "Kb");
+  print.log("Total:", (size / 1024).toFixed(2), "Kb");
 });
 
 // Ejercicio throttle
@@ -185,7 +185,7 @@ function throttle(func, ms) {
   };
 }
 
-const throttledLog = throttle(console.log, 500);
+const throttledLog = throttle(print.log, 500);
 
 throttledLog("SPAM!");
 setTimeout(() => throttledLog("SPAM!"), 250); // bloqueado
@@ -202,7 +202,7 @@ function debounce(func, ms) {
   };
 }
 
-const debouncedLog = debounce(console.log, 500);
+const debouncedLog = debounce(print.log, 500);
 
 debouncedLog("SPAM!"); // bloqueado
 setTimeout(() => debouncedLog("SPAM!"), 250); // bloqueado
@@ -211,15 +211,15 @@ setTimeout(() => debouncedLog("SPAM!"), 550);
 // Ejercicio observables
 // solución en ./observables.js
 const eventManager = require("./observables-I.js");
-eventManager.on("detonate", () => console.log("explosion"));
-eventManager.on("detonate", () => console.log("smoke"));
+eventManager.on("detonate", () => print.log("explosion"));
+eventManager.on("detonate", () => print.log("smoke"));
 eventManager.emit("detonate");
 
 // Ejercicio observables II
 // solución en ./observables.js
 const eventManager2 = require("./observables-II.js");
-eventManager2.once("detonate", () => console.log("explosion"));
-eventManager2.once("detonate", () => console.log("smoke"));
+eventManager2.once("detonate", () => print.log("explosion"));
+eventManager2.once("detonate", () => print.log("smoke"));
 eventManager2.emit("detonate");
 eventManager2.emit("detonate"); // no imprime nada
 
@@ -247,6 +247,6 @@ class Test extends Observable {
 }
 
 const test = new Test();
-test.on("detonate", () => console.log("explosion"));
-test.on("detonate", () => console.log("smoke"));
+test.on("detonate", () => print.log("explosion"));
+test.on("detonate", () => print.log("smoke"));
 test.emit("detonate");

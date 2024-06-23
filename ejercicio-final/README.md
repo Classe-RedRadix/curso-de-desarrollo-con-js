@@ -11,11 +11,11 @@ Para implementar async/await necesitamos introducir el concepto de _generador_. 
 ```javascript
 // `counter` es un generador
 function* counter() {
-  console.log("Devolviendo 1...");
+  print.log("Devolviendo 1...");
   yield 1;
-  console.log("Devolviendo 2...");
+  print.log("Devolviendo 2...");
   yield 2;
-  console.log("Devolviendo 3...");
+  print.log("Devolviendo 3...");
   yield 3;
 }
 
@@ -23,13 +23,13 @@ function* counter() {
 const generator = counter();
 
 // para ejecutar el generador utilizamos `next`
-console.log(generator.next().value); // hasta el primer yield y devuelve 1
-console.log(generator.next().value); // hasta el segundo yield y devuelve 2
+print.log(generator.next().value); // hasta el primer yield y devuelve 1
+print.log(generator.next().value); // hasta el segundo yield y devuelve 2
 
 // ¡podemos retomar el flujo del generador cuando queramos!
 setTimeout(() => {
   // Ejecuta el último bloque del generador y devuelve 3
-  console.log(generator.next().value);
+  print.log(generator.next().value);
 }, 1000);
 ```
 
@@ -38,14 +38,14 @@ Recomendamos ejecutar el código en la consola y experimentar con él para compr
 ```javascript
 // podemos comprobar si el generador ha terminado con `done`
 const generator = counter();
-console.log(generator.next().value); // 1
-console.log(generator.next().value); // 2
-console.log(generator.next().value); // 3
+print.log(generator.next().value); // 1
+print.log(generator.next().value); // 2
+print.log(generator.next().value); // 3
 
 // `next` devuelve un objeto yielded con una propiedad `value` y una propiedad `done`
 const yielded = generator.next();
-console.log(yielded.value); // undefined
-console.log(yielded.done); // true
+print.log(yielded.value); // undefined
+print.log(yielded.done); // true
 ```
 
 Los generadores nos permiten hacer cosas interesantes, como generar un array infinito:
@@ -64,9 +64,9 @@ function* evenNumberGenerator() {
 const evenNumbers = evenNumberGenerator();
 
 // podemos llamar a next un número infinito de veces
-console.log(evenNumbers.next().value);
-console.log(evenNumbers.next().value);
-console.log(evenNumbers.next().value);
+print.log(evenNumbers.next().value);
+print.log(evenNumbers.next().value);
+print.log(evenNumbers.next().value);
 ```
 
 El método `next` nos permite pasarle un valor que determinará qué devuelve yield dentro del generador. **Este concepto es importante para resolver el ejercicio final**.
@@ -75,7 +75,7 @@ El método `next` nos permite pasarle un valor que determinará qué devuelve yi
 function* generator() {
   while (true) {
     const value = yield;
-    console.log(value);
+    print.log(value);
   }
 }
 
@@ -115,9 +115,9 @@ Veamos un ejemplo de async/await...
 ```javascript
 async function main() {
   const one = await futureValue(1, 1000);
-  console.log(one); // 1 -> al segundo
+  print.log(one); // 1 -> al segundo
   const two = await futureValue(2, 1000);
-  console.log(two); // 2 -> a los dos segundos
+  print.log(two); // 2 -> a los dos segundos
 }
 
 main();
@@ -128,9 +128,9 @@ En asynk/yield lo expresaríamos de esta forma:
 ```javascript
 const main = asynk(function* () {
   const one = yield futureValue(1, 1000);
-  console.log(one); // 1 -> al segundo
+  print.log(one); // 1 -> al segundo
   const two = yield futureValue(2, 1000);
-  console.log(two); // 2 -> a los dos segundos
+  print.log(two); // 2 -> a los dos segundos
 });
 
 main();

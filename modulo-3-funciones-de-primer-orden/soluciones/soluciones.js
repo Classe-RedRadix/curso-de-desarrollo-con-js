@@ -5,7 +5,7 @@ function repeat(func, n) {
   }
 }
 
-repeat(() => console.log("SPAM!"), 3);
+repeat(() => print.log("SPAM!"), 3);
 
 // Ejercicio funciones II
 function retry(func, attempts) {
@@ -17,7 +17,7 @@ function retry(func, attempts) {
   }
 }
 
-retry(() => console.log("SPAM!"), 3);
+retry(() => print.log("SPAM!"), 3);
 
 // Ejercicio funciones III
 function map(func, list) {
@@ -28,7 +28,7 @@ function map(func, list) {
   return result;
 }
 
-console.log(map((x) => x + 1, [1, 2, 3]));
+print.log(map((x) => x + 1, [1, 2, 3]));
 
 // Ejercicio funciones IV
 function filter(func, list) {
@@ -39,7 +39,7 @@ function filter(func, list) {
   return result;
 }
 
-console.log(filter((x) => x >= 2, [1, 2, 3]));
+print.log(filter((x) => x >= 2, [1, 2, 3]));
 
 // Ejercicio funciones V
 function reduce(func, initial, list) {
@@ -50,21 +50,21 @@ function reduce(func, initial, list) {
   return acc;
 }
 
-console.log(reduce((acc, x) => acc + x, 10, [1, 2, 3]));
+print.log(reduce((acc, x) => acc + x, 10, [1, 2, 3]));
 
 // Ejercicio funciones VI
 function map2(func, list) {
   return list.reduce((acc, x) => [...acc, func(x)], []);
 }
 
-console.log(map2((x) => x + 1, [1, 2, 3]));
+print.log(map2((x) => x + 1, [1, 2, 3]));
 
 // Ejercicio funciones VII
 function filter2(func, list) {
   return list.reduce((acc, x) => (func(x) ? [...acc, x] : acc), []);
 }
 
-console.log(filter2((x) => x >= 2, [1, 2, 3]));
+print.log(filter2((x) => x >= 2, [1, 2, 3]));
 
 // Ejercicio funciones VIII
 function negate(func) {
@@ -75,7 +75,7 @@ function isEven(number) {
   return number % 2 === 0;
 }
 const isNotEven = negate(isEven);
-console.log([1, 2, 3, 4].filter(isNotEven));
+print.log([1, 2, 3, 4].filter(isNotEven));
 
 // Ejercicio clausuras
 function add(num1) {
@@ -84,7 +84,7 @@ function add(num1) {
   };
 }
 const add2 = add(2);
-console.log(add2(3));
+print.log(add2(3));
 
 // Ejercicio funciones IX
 function memoize(func) {
@@ -96,15 +96,15 @@ function memoize(func) {
 }
 
 function duplicate(a) {
-  console.log("Calculando...");
+  print.log("Calculando...");
   return a * 2;
 }
 
 const memoizedDuplicate = memoize(duplicate);
 
-console.log(memoizedDuplicate(2));
-console.log(memoizedDuplicate(2));
-console.log(memoizedDuplicate(3));
+print.log(memoizedDuplicate(2));
+print.log(memoizedDuplicate(2));
+print.log(memoizedDuplicate(3));
 
 // Ejercicio funciones X
 function memoize2(func) {
@@ -117,15 +117,15 @@ function memoize2(func) {
 }
 
 function sum(a, b) {
-  console.log("Calculando...");
+  print.log("Calculando...");
   return a + b;
 }
 
 const memoizedSum = memoize2(sum);
 
-console.log(memoizedSum(2, 2));
-console.log(memoizedSum(2, 2));
-console.log(memoizedSum(2, 3));
+print.log(memoizedSum(2, 2));
+print.log(memoizedSum(2, 2));
+print.log(memoizedSum(2, 3));
 
 // Ejercicio funciones XI
 function partial(func, firstParam) {
@@ -136,5 +136,5 @@ function partial(func, firstParam) {
 
 const sum = (a, b) => a + b;
 const add1 = partial(sum, 1);
-console.log(add1(3));
-console.log(add1(4));
+print.log(add1(3));
+print.log(add1(4));

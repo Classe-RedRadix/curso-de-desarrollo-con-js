@@ -9,7 +9,7 @@ function mapKeys(obj, func) {
 
 const obj = { a: 1, b: 2, c: 3 };
 const result = mapKeys(obj, (key) => key.toUpperCase());
-console.log(result);
+print.log(result);
 
 // Ejercicio objetos II
 function mapValues(obj, func) {
@@ -22,7 +22,7 @@ function mapValues(obj, func) {
 
 const obj = { a: 1, b: 2, c: 3 };
 const result = mapValues(obj, (x) => x * 2);
-console.log(result);
+print.log(result);
 
 // Ejercicio objetos III
 // Object.assign({}, a, b, c)
@@ -34,8 +34,8 @@ function clone(obj) {
 
 const source = { a: 1, b: 2 };
 const copy = clone(source);
-console.log(copy);
-console.log(copy === source);
+print.log(copy);
+print.log(copy === source);
 
 // Ejercicio objetos V
 function sumObject(node) {
@@ -48,7 +48,7 @@ function sumObject(node) {
   }
 }
 
-console.log(sumObject({ a: 1, b: { c: 2, d: 5, e: { f: 9, g: 6 } } }));
+print.log(sumObject({ a: 1, b: { c: 2, d: 5, e: { f: 9, g: 6 } } }));
 
 // Ejercicio objetos VI
 function traverse(node, func) {
@@ -67,7 +67,7 @@ const mutation = traverse(
   (num) => num * 100
 );
 
-console.log(mutation);
+print.log(mutation);
 
 // Ejercicio objetos VII
 function cloneDeep(node) {
@@ -89,10 +89,10 @@ const source = {
   c: 25,
 };
 const copy = cloneDeep(source);
-console.log(copy); // debe ser igual
+print.log(copy); // debe ser igual
 copy.a.lorem = "change";
 copy.b[2].Homer = "change";
-console.log(source); // no debe haber cambiado
+print.log(source); // no debe haber cambiado
 
 // Ejercicio objetos VIII
 function meld(target = {}, source) {
@@ -127,17 +127,17 @@ const testConfig = merge(config, {
   database: { host: "localhost" },
 });
 
-console.log(testConfig);
+print.log(testConfig);
 
 // Ejercicio destructuring
 const { uno, dos } = { uno: 1, dos: 2 };
-console.log(uno, dos);
+print.log(uno, dos);
 
 // Ejercicio destructuring II
 let a = 1;
 let b = 2;
 [b, a] = [a, b];
-console.log(a, b);
+print.log(a, b);
 
 // Ejercicio destructuring III
 const {
@@ -161,7 +161,7 @@ const [
 
 // Ejercicio contexto
 function func() {
-  console.log(this.num); // Debería imprimir 10
+  print.log(this.num); // Debería imprimir 10
 }
 
 let obj = {
@@ -188,7 +188,7 @@ Object.defineProperty(array, "average", {
   },
 });
 
-console.log(array.average);
+print.log(array.average);
 
 // Ejercicio getters y setters II
 const obj = {
@@ -210,9 +210,9 @@ Object.defineProperty(obj, "value", {
 obj.value = 1;
 obj.value = 2;
 
-console.log(obj.value);
+print.log(obj.value);
 obj.undo();
-console.log(obj.value);
+print.log(obj.value);
 
 // Ejercicio prototipos
 const c = Object.create(null, {

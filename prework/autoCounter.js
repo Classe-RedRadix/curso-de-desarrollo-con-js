@@ -5,7 +5,7 @@ let i = 0;
 
 const increaseOne = () => {
   i = i+1;
-  console.log(i);
+  print.log(i);
 };
 
 let autoCounter = setInterval(increaseOne, 1000, i);

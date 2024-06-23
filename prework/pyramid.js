@@ -9,7 +9,7 @@ function pyramid (rows) {
     let hastagsPerRow = (currentRow * 2) - 1;
     let spacesPerRowOnEachSide = (columns - hastagsPerRow) / 2;
     pyramidRow = `${' '.repeat(spacesPerRowOnEachSide)}${'#'.repeat(hastagsPerRow)}${' '.repeat(spacesPerRowOnEachSide)}`
-    console.log(pyramidRow);
+    print.log(pyramidRow);
   }
 }
 

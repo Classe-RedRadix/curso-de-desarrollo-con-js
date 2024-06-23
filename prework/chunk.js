@@ -5,12 +5,12 @@ function chunk(array, size) {
   let result = [];
   for (let i = 0; i <= array.length-1; i = i + size) {
     let chunkToInsert = array.slice(i, i + size);
-    result = result.concat(chunkToInsert);
+    result.push(chunkToInsert);
   }
   return result
 }
 
-console.log(chunk([1, 2, 3, 4], 2))
+print.log(chunk([1, 2, 3, 4], 2))
 
 // Ejemplos
 chunk([1, 2, 3, 4], 2) === [[ 1, 2], [3, 4]]
